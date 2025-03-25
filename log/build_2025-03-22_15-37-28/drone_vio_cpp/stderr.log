@@ -1,0 +1,26 @@
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In member function ‘[01m[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetRPY[m[K’; did you mean ‘[01m[KsetRPY[m[K’?
+   69 |         q_ned.setRPY(q_enu.[01;31m[KgetRPY[m[K()[1], q_enu.setRPY()[0], q_enu.setRPY()[2]);
+      |                            [01;31m[K^~~~~~[m[K
+      |                            [32m[KsetRPY[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2::Quaternion::setRPY()[m[K’
+   69 |         q_ned.setRPY(q_enu.getRPY()[1], [01;31m[Kq_enu.setRPY()[m[K[0], q_enu.setRPY()[2]);
+      |                                         [01;31m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:19[m[K,
+                 from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:88:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::Quaternion::setRPY(const tf2Scalar&, const tf2Scalar&, const tf2Scalar&)[m[K’
+   88 |   void [01;36m[KsetRPY[m[K(const tf2Scalar& roll, const tf2Scalar& pitch, const tf2Scalar& yaw)
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:88:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2::Quaternion::setRPY()[m[K’
+   69 |         q_ned.setRPY(q_enu.getRPY()[1], q_enu.setRPY()[0], [01;31m[Kq_enu.setRPY()[m[K[2]);
+      |                                                            [01;31m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:19[m[K,
+                 from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:88:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::Quaternion::setRPY(const tf2Scalar&, const tf2Scalar&, const tf2Scalar&)[m[K’
+   88 |   void [01;36m[KsetRPY[m[K(const tf2Scalar& roll, const tf2Scalar& pitch, const tf2Scalar& yaw)
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:88:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

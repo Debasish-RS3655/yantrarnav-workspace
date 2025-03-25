@@ -1,0 +1,128 @@
+[0.060s] Invoking command in '/home/nits/ros2_ws/build/drone_vio_cpp': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --build /home/nits/ros2_ws/build/drone_vio_cpp -- -j6 -l6
+[0.175s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.539s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.641s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.648s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.669s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.697s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.729s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.819s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.824s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.116s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.246s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.326s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.359s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.405s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.414s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.415s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.880s] -- Configuring done
+[1.917s] -- Generating done
+[1.930s] -- Build files have been written to: /home/nits/ros2_ws/build/drone_vio_cpp
+[2.019s] [35m[1mConsolidate compiler generated dependencies of target odom_to_vision_pose[0m
+[2.076s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o[0m
+[8.720s] [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In member function ‘[01m[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.721s] [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion, geometry_msgs::msg::Pose_<std::allocator<void> >::_orientation_type&)[m[K’
+[8.721s]    60 |         [01;31m[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)[m[K;
+[8.721s]       |         [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.722s] In file included from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:56[m[K,
+[8.722s]                  from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6[m[K:
+[8.722s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+[8.722s]   129 | B [01;36m[KtoMsg[m[K(const A & a);
+[8.722s]       |   [01;36m[K^~~~~[m[K
+[8.723s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.723s] [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.723s]    60 |         [01;36m[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)[m[K;
+[8.723s]       |         [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.723s] In file included from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6[m[K:
+[8.724s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Vector3 tf2::toMsg(const tf2::Vector3&)[m[K’
+[8.724s]   110 | geometry_msgs::msg::Vector3 [01;36m[KtoMsg[m[K(const tf2::Vector3 & in)
+[8.724s]       |                             [01;36m[K^~~~~[m[K
+[8.724s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.724s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Vector3Stamped tf2::toMsg(const Vector3Stamped&)[m[K’
+[8.725s]   182 | geometry_msgs::msg::Vector3Stamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Vector3Stamped & in)
+[8.725s]       |                                    [01;36m[K^~~~~[m[K
+[8.726s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.726s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point&)[m[K’
+[8.726s]   230 | geometry_msgs::msg::Point & [01;36m[KtoMsg[m[K(const tf2::Vector3 & in, geometry_msgs::msg::Point & out)
+[8.726s]       |                             [01;36m[K^~~~~[m[K
+[8.727s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+[8.727s]   230 | geometry_msgs::msg::Point & toMsg([01;36m[Kconst tf2::Vector3 & in[m[K, geometry_msgs::msg::Point & out)
+[8.727s]       |                                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[8.727s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:31:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point32& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point32&)[m[K’
+[8.727s]   278 | geometry_msgs::msg::Point32 & [01;36m[KtoMsg[m[K(const tf2::Vector3 & in, geometry_msgs::msg::Point32 & out)
+[8.729s]       |                               [01;36m[K^~~~~[m[K
+[8.730s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+[8.730s]   278 | geometry_msgs::msg::Point32 & toMsg([01;36m[Kconst tf2::Vector3 & in[m[K, geometry_msgs::msg::Point32 & out)
+[8.730s]       |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[8.730s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PointStamped tf2::toMsg(const PointStamped&)[m[K’
+[8.730s]   353 | geometry_msgs::msg::PointStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PointStamped & in)
+[8.731s]       |                                  [01;36m[K^~~~~[m[K
+[8.731s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.731s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseStamped tf2::toMsg(const PoseStamped&)[m[K’
+[8.731s]   433 | geometry_msgs::msg::PoseStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PoseStamped & in)
+[8.731s]       |                                 [01;36m[K^~~~~[m[K
+[8.731s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.731s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Polygon tf2::toMsg(const Polygon&)[m[K’
+[8.735s]   480 | geometry_msgs::msg::Polygon [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Polygon & in)
+[8.735s]       |                             [01;36m[K^~~~~[m[K
+[8.735s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.735s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PolygonStamped tf2::toMsg(const PolygonStamped&)[m[K’
+[8.736s]   551 | geometry_msgs::msg::PolygonStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PolygonStamped & in)
+[8.736s]       |                                    [01;36m[K^~~~~[m[K
+[8.736s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.736s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseWithCovariance tf2::toMsg(const PoseWithCovariance&)[m[K’
+[8.736s]   724 | geometry_msgs::msg::PoseWithCovariance [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PoseWithCovariance & in)
+[8.736s]       |                                        [01;36m[K^~~~~[m[K
+[8.736s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.736s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseWithCovarianceStamped tf2::toMsg(const PoseWithCovarianceStamped&)[m[K’
+[8.736s]   823 | geometry_msgs::msg::PoseWithCovarianceStamped [01;36m[KtoMsg[m[K(
+[8.737s]       |                                               [01;36m[K^~~~~[m[K
+[8.737s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.737s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Quaternion tf2::toMsg(const tf2::Quaternion&)[m[K’
+[8.737s]   919 | geometry_msgs::msg::Quaternion [01;36m[KtoMsg[m[K(const tf2::Quaternion & in)
+[8.737s]       |                                [01;36m[K^~~~~[m[K
+[8.737s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.737s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const QuaternionStamped&)[m[K’
+[8.737s]   998 | geometry_msgs::msg::QuaternionStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::QuaternionStamped & in)
+[8.737s]       |                                       [01;36m[K^~~~~[m[K
+[8.738s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.738s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const tf2::Stamped<tf2::Quaternion>&)[m[K’
+[8.738s]  1022 | geometry_msgs::msg::QuaternionStamped [01;36m[KtoMsg[m[K(const tf2::Stamped<tf2::Quaternion> & in)
+[8.738s]       |                                       [01;36m[K^~~~~[m[K
+[8.738s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.738s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Transform tf2::toMsg(const tf2::Transform&)[m[K’
+[8.738s]  1060 | geometry_msgs::msg::Transform [01;36m[KtoMsg[m[K(const tf2::Transform & in)
+[8.738s]       |                               [01;36m[K^~~~~[m[K
+[8.739s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.739s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Transform&)[m[K’
+[8.739s]  1076 | void [01;36m[KtoMsg[m[K(const tf2::Transform & in, geometry_msgs::msg::Transform & out)
+[8.739s]       |      [01;36m[K^~~~~[m[K
+[8.739s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Transform&[m[K’
+[8.739s]  1076 | void toMsg([01;36m[Kconst tf2::Transform & in[m[K, geometry_msgs::msg::Transform & out)
+[8.739s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[8.739s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const TransformStamped&)[m[K’
+[8.739s]  1187 | geometry_msgs::msg::TransformStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::TransformStamped & in)
+[8.740s]       |                                      [01;36m[K^~~~~[m[K
+[8.740s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.740s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const tf2::Stamped<tf2::Transform>&)[m[K’
+[8.740s]  1226 | geometry_msgs::msg::TransformStamped [01;36m[KtoMsg[m[K(const tf2::Stamped<tf2::Transform> & in)
+[8.740s]       |                                      [01;36m[K^~~~~[m[K
+[8.740s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.740s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Pose tf2::toMsg(const Pose&)[m[K’
+[8.740s]  1275 | geometry_msgs::msg::Pose [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Pose & in)
+[8.740s]       |                          [01;36m[K^~~~~[m[K
+[8.741s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[8.741s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Pose&)[m[K’
+[8.741s]  1296 | void [01;36m[KtoMsg[m[K(const tf2::Transform & in, geometry_msgs::msg::Pose & out)
+[8.741s]       |      [01;36m[K^~~~~[m[K
+[8.741s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Transform&[m[K’
+[8.741s]  1296 | void toMsg([01;36m[Kconst tf2::Transform & in[m[K, geometry_msgs::msg::Pose & out)
+[8.741s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[8.741s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::WrenchStamped tf2::toMsg(const WrenchStamped&)[m[K’
+[8.741s]  1454 | geometry_msgs::msg::WrenchStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::WrenchStamped & in)
+[8.742s]       |                                   [01;36m[K^~~~~[m[K
+[8.742s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[16.080s] gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+[16.080s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+[16.080s] gmake: *** [Makefile:146: all] Error 2
+[16.091s] Invoked command in '/home/nits/ros2_ws/build/drone_vio_cpp' returned '2': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --build /home/nits/ros2_ws/build/drone_vio_cpp -- -j6 -l6

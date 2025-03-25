@@ -1,0 +1,19 @@
+[2.192s] Invoking command in '/home/nits/ros2_ws/build/new_takeoff_node': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nits/ros2_ws/build/new_takeoff_node/build --no-deps symlink_data --force
+[3.064s] running develop
+[3.643s] running egg_info
+[3.683s] writing new_takeoff_node.egg-info/PKG-INFO
+[3.684s] writing dependency_links to new_takeoff_node.egg-info/dependency_links.txt
+[3.685s] writing entry points to new_takeoff_node.egg-info/entry_points.txt
+[3.685s] writing requirements to new_takeoff_node.egg-info/requires.txt
+[3.686s] writing top-level names to new_takeoff_node.egg-info/top_level.txt
+[3.773s] reading manifest file 'new_takeoff_node.egg-info/SOURCES.txt'
+[3.776s] writing manifest file 'new_takeoff_node.egg-info/SOURCES.txt'
+[3.944s] running build_ext
+[3.944s] Creating /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new-takeoff-node.egg-link (link to .)
+[3.946s] Installing takeoff_node script to /home/nits/ros2_ws/install/new_takeoff_node/lib/new_takeoff_node
+[3.946s] 
+[3.947s] Installed /home/nits/ros2_ws/build/new_takeoff_node
+[3.947s] running symlink_data
+[3.949s] symbolically linking /home/nits/ros2_ws/build/new_takeoff_node/resource/new_takeoff_node -> /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages
+[3.950s] symbolically linking /home/nits/ros2_ws/build/new_takeoff_node/package.xml -> /home/nits/ros2_ws/install/new_takeoff_node/share/new_takeoff_node
+[4.120s] Invoked command in '/home/nits/ros2_ws/build/new_takeoff_node' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nits/ros2_ws/build/new_takeoff_node/build --no-deps symlink_data --force

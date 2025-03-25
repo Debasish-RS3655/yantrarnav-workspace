@@ -1,0 +1,302 @@
+[0.000000] (-) TimerEvent: {}
+[0.000627] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001364] (-) JobUnselected: {'identifier': 'drone_takeoff'}
+[0.001695] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.001804] (-) JobUnselected: {'identifier': 'local_zeroing_pkg'}
+[0.001880] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001949] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002019] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002094] (drone_vio_cpp) JobQueued: {'identifier': 'drone_vio_cpp', 'dependencies': OrderedDict()}
+[0.002172] (drone_vio_cpp) JobStarted: {'identifier': 'drone_vio_cpp'}
+[0.053806] (drone_vio_cpp) JobProgress: {'identifier': 'drone_vio_cpp', 'progress': 'cmake'}
+[0.057785] (drone_vio_cpp) JobProgress: {'identifier': 'drone_vio_cpp', 'progress': 'build'}
+[0.059493] (drone_vio_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nits/ros2_ws/build/drone_vio_cpp', '--', '-j6', '-l6'], 'cwd': '/home/nits/ros2_ws/build/drone_vio_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '40583'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1896,unix/ubuntu:/tmp/.ICE-unix/1896'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/43a578d1_12e6_43d3_a91a_e9f10bc4a8c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.158'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/drone_vio_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper')]), 'shell': False}
+[0.099856] (-) TimerEvent: {}
+[0.176444] (drone_vio_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200038] (-) TimerEvent: {}
+[0.300720] (-) TimerEvent: {}
+[0.401332] (-) TimerEvent: {}
+[0.501983] (-) TimerEvent: {}
+[0.541285] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.602194] (-) TimerEvent: {}
+[0.643010] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.650017] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.670690] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.699165] (drone_vio_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.702269] (-) TimerEvent: {}
+[0.730532] (drone_vio_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.802491] (-) TimerEvent: {}
+[0.821067] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.825905] (drone_vio_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.902679] (-) TimerEvent: {}
+[1.003468] (-) TimerEvent: {}
+[1.104593] (-) TimerEvent: {}
+[1.117979] (drone_vio_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.204772] (-) TimerEvent: {}
+[1.248369] (drone_vio_cpp) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.304945] (-) TimerEvent: {}
+[1.327847] (drone_vio_cpp) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.361050] (drone_vio_cpp) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.405199] (-) TimerEvent: {}
+[1.406306] (drone_vio_cpp) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.416138] (drone_vio_cpp) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.416721] (drone_vio_cpp) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.505350] (-) TimerEvent: {}
+[1.606089] (-) TimerEvent: {}
+[1.707363] (-) TimerEvent: {}
+[1.808043] (-) TimerEvent: {}
+[1.882097] (drone_vio_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.908156] (-) TimerEvent: {}
+[1.918777] (drone_vio_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[1.931800] (drone_vio_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/nits/ros2_ws/build/drone_vio_cpp\n'}
+[2.008341] (-) TimerEvent: {}
+[2.020587] (drone_vio_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odom_to_vision_pose\x1b[0m\n'}
+[2.077524] (drone_vio_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o\x1b[0m\n'}
+[2.108518] (-) TimerEvent: {}
+[2.209193] (-) TimerEvent: {}
+[2.309875] (-) TimerEvent: {}
+[2.411517] (-) TimerEvent: {}
+[2.515391] (-) TimerEvent: {}
+[2.616640] (-) TimerEvent: {}
+[2.717744] (-) TimerEvent: {}
+[2.820478] (-) TimerEvent: {}
+[2.921559] (-) TimerEvent: {}
+[3.022293] (-) TimerEvent: {}
+[3.123429] (-) TimerEvent: {}
+[3.224294] (-) TimerEvent: {}
+[3.325471] (-) TimerEvent: {}
+[3.426598] (-) TimerEvent: {}
+[3.527408] (-) TimerEvent: {}
+[3.628478] (-) TimerEvent: {}
+[3.729339] (-) TimerEvent: {}
+[3.830135] (-) TimerEvent: {}
+[3.930897] (-) TimerEvent: {}
+[4.031788] (-) TimerEvent: {}
+[4.132665] (-) TimerEvent: {}
+[4.233716] (-) TimerEvent: {}
+[4.334440] (-) TimerEvent: {}
+[4.435602] (-) TimerEvent: {}
+[4.536347] (-) TimerEvent: {}
+[4.637129] (-) TimerEvent: {}
+[4.737847] (-) TimerEvent: {}
+[4.838560] (-) TimerEvent: {}
+[4.939234] (-) TimerEvent: {}
+[5.039909] (-) TimerEvent: {}
+[5.140635] (-) TimerEvent: {}
+[5.241356] (-) TimerEvent: {}
+[5.342364] (-) TimerEvent: {}
+[5.443383] (-) TimerEvent: {}
+[5.544123] (-) TimerEvent: {}
+[5.645075] (-) TimerEvent: {}
+[5.745801] (-) TimerEvent: {}
+[5.846527] (-) TimerEvent: {}
+[5.947572] (-) TimerEvent: {}
+[6.048518] (-) TimerEvent: {}
+[6.149207] (-) TimerEvent: {}
+[6.249915] (-) TimerEvent: {}
+[6.350732] (-) TimerEvent: {}
+[6.451460] (-) TimerEvent: {}
+[6.552227] (-) TimerEvent: {}
+[6.652978] (-) TimerEvent: {}
+[6.753796] (-) TimerEvent: {}
+[6.854894] (-) TimerEvent: {}
+[6.957347] (-) TimerEvent: {}
+[7.058073] (-) TimerEvent: {}
+[7.158857] (-) TimerEvent: {}
+[7.259771] (-) TimerEvent: {}
+[7.360691] (-) TimerEvent: {}
+[7.461426] (-) TimerEvent: {}
+[7.562846] (-) TimerEvent: {}
+[7.663725] (-) TimerEvent: {}
+[7.764517] (-) TimerEvent: {}
+[7.865220] (-) TimerEvent: {}
+[7.966292] (-) TimerEvent: {}
+[8.067077] (-) TimerEvent: {}
+[8.167881] (-) TimerEvent: {}
+[8.268929] (-) TimerEvent: {}
+[8.370032] (-) TimerEvent: {}
+[8.470742] (-) TimerEvent: {}
+[8.571496] (-) TimerEvent: {}
+[8.672212] (-) TimerEvent: {}
+[8.719736] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.722989] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KtoMsg(tf2::Quaternion, geometry_msgs::msg::Pose_<std::allocator<void> >::_orientation_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.723336] (drone_vio_cpp) StderrLine: {'line': b'   60 |         \x1b[01;31m\x1b[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)\x1b[m\x1b[K;\n'}
+[8.723553] (drone_vio_cpp) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.723745] (drone_vio_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:56\x1b[m\x1b[K,\n'}
+[8.723929] (drone_vio_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6\x1b[m\x1b[K:\n'}
+[8.724201] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class A, class B> B tf2::toMsg(const A&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.724387] (drone_vio_cpp) StderrLine: {'line': b'  129 | B \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const A & a);\n'}
+[8.724559] (drone_vio_cpp) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.724733] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.724902] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.725064] (drone_vio_cpp) StderrLine: {'line': b'   60 |         \x1b[01;36m\x1b[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)\x1b[m\x1b[K;\n'}
+[8.725223] (drone_vio_cpp) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.725383] (drone_vio_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6\x1b[m\x1b[K:\n'}
+[8.725588] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3 tf2::toMsg(const tf2::Vector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.725767] (drone_vio_cpp) StderrLine: {'line': b'  110 | geometry_msgs::msg::Vector3 \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Vector3 & in)\n'}
+[8.725931] (drone_vio_cpp) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.726097] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.726259] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3Stamped tf2::toMsg(const Vector3Stamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.726644] (drone_vio_cpp) StderrLine: {'line': b'  182 | geometry_msgs::msg::Vector3Stamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::Vector3Stamped & in)\n'}
+[8.727046] (drone_vio_cpp) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.727648] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.727906] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.728216] (drone_vio_cpp) StderrLine: {'line': b'  230 | geometry_msgs::msg::Point & \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Vector3 & in, geometry_msgs::msg::Point & out)\n'}
+[8.728409] (drone_vio_cpp) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.728585] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Ktf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst tf2::Vector3&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.728774] (drone_vio_cpp) StderrLine: {'line': b'  230 | geometry_msgs::msg::Point & toMsg(\x1b[01;36m\x1b[Kconst tf2::Vector3 & in\x1b[m\x1b[K, geometry_msgs::msg::Point & out)\n'}
+[8.728949] (drone_vio_cpp) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[8.729121] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point32& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point32&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.729293] (drone_vio_cpp) StderrLine: {'line': b'  278 | geometry_msgs::msg::Point32 & \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Vector3 & in, geometry_msgs::msg::Point32 & out)\n'}
+[8.729465] (drone_vio_cpp) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.731838] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Ktf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst tf2::Vector3&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.732144] (drone_vio_cpp) StderrLine: {'line': b'  278 | geometry_msgs::msg::Point32 & toMsg(\x1b[01;36m\x1b[Kconst tf2::Vector3 & in\x1b[m\x1b[K, geometry_msgs::msg::Point32 & out)\n'}
+[8.732293] (drone_vio_cpp) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[8.732423] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PointStamped tf2::toMsg(const PointStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.732554] (drone_vio_cpp) StderrLine: {'line': b'  353 | geometry_msgs::msg::PointStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::PointStamped & in)\n'}
+[8.732678] (drone_vio_cpp) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.732793] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.732910] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped tf2::toMsg(const PoseStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.733027] (drone_vio_cpp) StderrLine: {'line': b'  433 | geometry_msgs::msg::PoseStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::PoseStamped & in)\n'}
+[8.733173] (drone_vio_cpp) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.733297] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.733410] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Polygon tf2::toMsg(const Polygon&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.737017] (drone_vio_cpp) StderrLine: {'line': b'  480 | geometry_msgs::msg::Polygon \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::Polygon & in)\n'}
+[8.737259] (drone_vio_cpp) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.737398] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.737523] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PolygonStamped tf2::toMsg(const PolygonStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.737645] (drone_vio_cpp) StderrLine: {'line': b'  551 | geometry_msgs::msg::PolygonStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::PolygonStamped & in)\n'}
+[8.737762] (drone_vio_cpp) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.737899] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.738014] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseWithCovariance tf2::toMsg(const PoseWithCovariance&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.738130] (drone_vio_cpp) StderrLine: {'line': b'  724 | geometry_msgs::msg::PoseWithCovariance \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::PoseWithCovariance & in)\n'}
+[8.738240] (drone_vio_cpp) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.738350] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.738463] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseWithCovarianceStamped tf2::toMsg(const PoseWithCovarianceStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.738578] (drone_vio_cpp) StderrLine: {'line': b'  823 | geometry_msgs::msg::PoseWithCovarianceStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(\n'}
+[8.738688] (drone_vio_cpp) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.738797] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.738908] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Quaternion tf2::toMsg(const tf2::Quaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.739053] (drone_vio_cpp) StderrLine: {'line': b'  919 | geometry_msgs::msg::Quaternion \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Quaternion & in)\n'}
+[8.739166] (drone_vio_cpp) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.739275] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.739387] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const QuaternionStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.739499] (drone_vio_cpp) StderrLine: {'line': b'  998 | geometry_msgs::msg::QuaternionStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::QuaternionStamped & in)\n'}
+[8.739610] (drone_vio_cpp) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.739721] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.739830] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const tf2::Stamped<tf2::Quaternion>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.739955] (drone_vio_cpp) StderrLine: {'line': b' 1022 | geometry_msgs::msg::QuaternionStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Stamped<tf2::Quaternion> & in)\n'}
+[8.740098] (drone_vio_cpp) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.740211] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.740323] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Transform tf2::toMsg(const tf2::Transform&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.740436] (drone_vio_cpp) StderrLine: {'line': b' 1060 | geometry_msgs::msg::Transform \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Transform & in)\n'}
+[8.740544] (drone_vio_cpp) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.740651] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.740759] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Transform&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.740872] (drone_vio_cpp) StderrLine: {'line': b' 1076 | void \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Transform & in, geometry_msgs::msg::Transform & out)\n'}
+[8.740980] (drone_vio_cpp) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.741090] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Ktf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst tf2::Transform&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.741229] (drone_vio_cpp) StderrLine: {'line': b' 1076 | void toMsg(\x1b[01;36m\x1b[Kconst tf2::Transform & in\x1b[m\x1b[K, geometry_msgs::msg::Transform & out)\n'}
+[8.741341] (drone_vio_cpp) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[8.741448] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const TransformStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.741556] (drone_vio_cpp) StderrLine: {'line': b' 1187 | geometry_msgs::msg::TransformStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::TransformStamped & in)\n'}
+[8.741664] (drone_vio_cpp) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.741772] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.741880] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const tf2::Stamped<tf2::Transform>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.741988] (drone_vio_cpp) StderrLine: {'line': b' 1226 | geometry_msgs::msg::TransformStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Stamped<tf2::Transform> & in)\n'}
+[8.742096] (drone_vio_cpp) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.742201] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.742307] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose tf2::toMsg(const Pose&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.742430] (drone_vio_cpp) StderrLine: {'line': b' 1275 | geometry_msgs::msg::Pose \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::Pose & in)\n'}
+[8.742538] (drone_vio_cpp) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.742644] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.742753] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Pose&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.742864] (drone_vio_cpp) StderrLine: {'line': b' 1296 | void \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const tf2::Transform & in, geometry_msgs::msg::Pose & out)\n'}
+[8.742975] (drone_vio_cpp) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.743085] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Ktf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst tf2::Transform&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.743224] (drone_vio_cpp) StderrLine: {'line': b' 1296 | void toMsg(\x1b[01;36m\x1b[Kconst tf2::Transform & in\x1b[m\x1b[K, geometry_msgs::msg::Pose & out)\n'}
+[8.743338] (drone_vio_cpp) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[8.743446] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::WrenchStamped tf2::toMsg(const WrenchStamped&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.743558] (drone_vio_cpp) StderrLine: {'line': b' 1454 | geometry_msgs::msg::WrenchStamped \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const geometry_msgs::msg::WrenchStamped & in)\n'}
+[8.743668] (drone_vio_cpp) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.743778] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[8.772455] (-) TimerEvent: {}
+[8.873173] (-) TimerEvent: {}
+[8.974730] (-) TimerEvent: {}
+[9.075458] (-) TimerEvent: {}
+[9.176148] (-) TimerEvent: {}
+[9.276855] (-) TimerEvent: {}
+[9.377522] (-) TimerEvent: {}
+[9.478236] (-) TimerEvent: {}
+[9.578966] (-) TimerEvent: {}
+[9.679699] (-) TimerEvent: {}
+[9.780458] (-) TimerEvent: {}
+[9.881171] (-) TimerEvent: {}
+[9.981946] (-) TimerEvent: {}
+[10.084662] (-) TimerEvent: {}
+[10.186193] (-) TimerEvent: {}
+[10.287308] (-) TimerEvent: {}
+[10.388163] (-) TimerEvent: {}
+[10.488837] (-) TimerEvent: {}
+[10.589678] (-) TimerEvent: {}
+[10.690612] (-) TimerEvent: {}
+[10.791324] (-) TimerEvent: {}
+[10.892952] (-) TimerEvent: {}
+[10.993876] (-) TimerEvent: {}
+[11.094732] (-) TimerEvent: {}
+[11.195536] (-) TimerEvent: {}
+[11.296520] (-) TimerEvent: {}
+[11.397739] (-) TimerEvent: {}
+[11.498577] (-) TimerEvent: {}
+[11.599293] (-) TimerEvent: {}
+[11.700015] (-) TimerEvent: {}
+[11.801115] (-) TimerEvent: {}
+[11.902129] (-) TimerEvent: {}
+[12.003925] (-) TimerEvent: {}
+[12.105005] (-) TimerEvent: {}
+[12.205841] (-) TimerEvent: {}
+[12.306715] (-) TimerEvent: {}
+[12.407796] (-) TimerEvent: {}
+[12.508609] (-) TimerEvent: {}
+[12.609425] (-) TimerEvent: {}
+[12.710216] (-) TimerEvent: {}
+[12.811048] (-) TimerEvent: {}
+[12.911817] (-) TimerEvent: {}
+[13.012664] (-) TimerEvent: {}
+[13.113494] (-) TimerEvent: {}
+[13.214297] (-) TimerEvent: {}
+[13.315034] (-) TimerEvent: {}
+[13.415733] (-) TimerEvent: {}
+[13.516535] (-) TimerEvent: {}
+[13.617432] (-) TimerEvent: {}
+[13.718232] (-) TimerEvent: {}
+[13.818950] (-) TimerEvent: {}
+[13.919707] (-) TimerEvent: {}
+[14.021024] (-) TimerEvent: {}
+[14.121728] (-) TimerEvent: {}
+[14.222677] (-) TimerEvent: {}
+[14.323581] (-) TimerEvent: {}
+[14.424436] (-) TimerEvent: {}
+[14.525181] (-) TimerEvent: {}
+[14.625961] (-) TimerEvent: {}
+[14.726684] (-) TimerEvent: {}
+[14.827424] (-) TimerEvent: {}
+[14.930471] (-) TimerEvent: {}
+[15.033001] (-) TimerEvent: {}
+[15.134108] (-) TimerEvent: {}
+[15.234883] (-) TimerEvent: {}
+[15.335745] (-) TimerEvent: {}
+[15.436929] (-) TimerEvent: {}
+[15.537793] (-) TimerEvent: {}
+[15.638645] (-) TimerEvent: {}
+[15.739642] (-) TimerEvent: {}
+[15.840332] (-) TimerEvent: {}
+[15.941088] (-) TimerEvent: {}
+[16.042270] (-) TimerEvent: {}
+[16.081529] (drone_vio_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1\n'}
+[16.082117] (drone_vio_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2\n'}
+[16.082318] (drone_vio_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.089190] (drone_vio_cpp) CommandEnded: {'returncode': 2}
+[16.135938] (drone_vio_cpp) JobEnded: {'identifier': 'drone_vio_cpp', 'rc': 2}
+[16.142386] (-) TimerEvent: {}
+[16.147158] (-) EventReactorShutdown: {}

@@ -1,0 +1,31 @@
+/home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+creating ../../build/new_takeoff_node/new_takeoff_node.egg-info
+writing ../../build/new_takeoff_node/new_takeoff_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/new_takeoff_node/new_takeoff_node.egg-info/dependency_links.txt
+writing requirements to ../../build/new_takeoff_node/new_takeoff_node.egg-info/requires.txt
+writing top-level names to ../../build/new_takeoff_node/new_takeoff_node.egg-info/top_level.txt
+writing manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'
+reading manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node
+copying new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node
+copying new_takeoff_node/__init__.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node
+running install
+running install_lib
+creating /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/__init__.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/takeoff_node.py to takeoff_node.cpython-310.pyc
+byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages
+copying resource/new_takeoff_node -> /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/nits/ros2_ws/install/new_takeoff_node/share/new_takeoff_node
+running install_egg_info
+Copying ../../build/new_takeoff_node/new_takeoff_node.egg-info to /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/nits/ros2_ws/build/new_takeoff_node/install.log'

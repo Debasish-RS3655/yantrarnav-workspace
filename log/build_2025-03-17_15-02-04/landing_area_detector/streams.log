@@ -1,0 +1,29 @@
+[0.030s] Invoking command in '/home/nits/ros2_ws/build/landing_area_detector': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6
+[0.149s] [35m[1mConsolidate compiler generated dependencies of target flat_area_detector[0m
+[0.224s] [ 50%] [32mBuilding CXX object CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o[0m
+[13.708s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:[m[K In member function ‘[01m[Kvoid FlatAreaDetector::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[13.708s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:130:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ is not a member of ‘[01m[Kboost[m[K’
+[13.708s]   130 |         kdtree_cluster.setInputCloud(boost::[01;31m[Kmake_shared[m[K<pcl::PointCloud<pcl::PointXYZ>>(landing_points_));
+[13.709s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[13.709s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:130:45:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[13.709s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[13.709s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[13.709s]                  from [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:1[m[K:
+[13.709s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_shared[m[K’
+[13.710s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[13.710s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[13.710s] In file included from [01m[K/usr/include/pcl-1.12/pcl/pcl_base.h:46[m[K,
+[13.710s]                  from [01m[K/usr/include/pcl-1.12/pcl/segmentation/sac_segmentation.h:42[m[K,
+[13.710s]                  from [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:2[m[K:
+[13.710s] [01m[K/usr/include/pcl-1.12/pcl/memory.h:122:66:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::make_shared[m[K’
+[13.710s]   122 | enable_if_t<!has_custom_allocator<T>::value, shared_ptr<T>> [01;36m[Kmake_shared[m[K(Args&&... args)
+[13.710s]       |                                                             [01;36m[K^~~~~~~~~~~[m[K
+[13.711s] 
+[13.711s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:130:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[13.711s]   130 | tInputCloud(boost::make_shared<pcl::PointCloud<pcl::PointXYZ[01;31m[K>>[m[K(landing_points_));
+[13.711s]       |                                                             [01;31m[K^~[m[K
+[13.711s] 
+[23.377s] gmake[2]: *** [CMakeFiles/flat_area_detector.dir/build.make:76: CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o] Error 1
+[23.378s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/flat_area_detector.dir/all] Error 2
+[23.379s] gmake: *** [Makefile:146: all] Error 2
+[23.387s] Invoked command in '/home/nits/ros2_ws/build/landing_area_detector' returned '2': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6

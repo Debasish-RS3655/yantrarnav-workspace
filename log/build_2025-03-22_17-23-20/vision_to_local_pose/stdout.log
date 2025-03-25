@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/vision_to_local_pose/vision_to_local_pose.egg-info
+writing ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/PKG-INFO
+writing dependency_links to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/dependency_links.txt
+writing entry points to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/entry_points.txt
+writing requirements to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/requires.txt
+writing top-level names to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/top_level.txt
+writing manifest file '../../build/vision_to_local_pose/vision_to_local_pose.egg-info/SOURCES.txt'
+reading manifest file '../../build/vision_to_local_pose/vision_to_local_pose.egg-info/SOURCES.txt'
+writing manifest file '../../build/vision_to_local_pose/vision_to_local_pose.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose
+copying vision_to_local_pose/vision_to_local_pose.py -> /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose
+copying vision_to_local_pose/__init__.py -> /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose
+running install
+running install_lib
+creating /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose
+copying /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose/vision_to_local_pose.py -> /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose
+copying /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose/__init__.py -> /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose
+byte-compiling /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose/vision_to_local_pose.py to vision_to_local_pose.cpython-310.pyc
+byte-compiling /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/nits/ros2_ws/install/vision_to_local_pose/share/ament_index/resource_index/packages
+copying resource/vision_to_local_pose -> /home/nits/ros2_ws/install/vision_to_local_pose/share/ament_index/resource_index/packages
+copying package.xml -> /home/nits/ros2_ws/install/vision_to_local_pose/share/vision_to_local_pose
+running install_egg_info
+Copying ../../build/vision_to_local_pose/vision_to_local_pose.egg-info to /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose-0.0.0-py3.10.egg-info
+running install_scripts
+Installing vision_to_local_pose script to /home/nits/ros2_ws/install/vision_to_local_pose/lib/vision_to_local_pose
+writing list of installed files to '/home/nits/ros2_ws/build/vision_to_local_pose/install.log'

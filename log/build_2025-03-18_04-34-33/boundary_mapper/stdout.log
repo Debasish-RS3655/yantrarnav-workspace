@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target boundary_mapper_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/boundary_mapper_node.dir/src/boundary_mapper_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable boundary_mapper_node[0m
+[100%] Built target boundary_mapper_node
+-- Install configuration: ""
+-- Installing: /home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node
+-- Set runtime path of "/home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node" to ""
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/package_run_dependencies/boundary_mapper
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/parent_prefix_path/boundary_mapper
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.sh
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.bash
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.sh
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.zsh
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.dsv
+-- Installing: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/packages/boundary_mapper
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig.cmake
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig-version.cmake
+-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.xml

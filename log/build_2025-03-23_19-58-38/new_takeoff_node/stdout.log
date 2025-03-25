@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing new_takeoff_node.egg-info/PKG-INFO
+writing dependency_links to new_takeoff_node.egg-info/dependency_links.txt
+writing entry points to new_takeoff_node.egg-info/entry_points.txt
+writing requirements to new_takeoff_node.egg-info/requires.txt
+writing top-level names to new_takeoff_node.egg-info/top_level.txt
+reading manifest file 'new_takeoff_node.egg-info/SOURCES.txt'
+writing manifest file 'new_takeoff_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new-takeoff-node.egg-link (link to .)
+Installing takeoff_node script to /home/nits/ros2_ws/install/new_takeoff_node/lib/new_takeoff_node
+
+Installed /home/nits/ros2_ws/build/new_takeoff_node
+running symlink_data
+symbolically linking /home/nits/ros2_ws/build/new_takeoff_node/resource/new_takeoff_node -> /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages
+symbolically linking /home/nits/ros2_ws/build/new_takeoff_node/package.xml -> /home/nits/ros2_ws/install/new_takeoff_node/share/new_takeoff_node

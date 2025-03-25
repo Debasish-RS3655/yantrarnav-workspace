@@ -1,0 +1,2 @@
+Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6

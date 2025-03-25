@@ -1,0 +1,49 @@
+[0.038s] Invoking command in '/home/nits/ros2_ws/build/landing_area_detector': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6
+[0.207s] [35m[1mConsolidate compiler generated dependencies of target flat_area_detector[0m
+[0.296s] [ 50%] [32mBuilding CXX object CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o[0m
+[15.922s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:138:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.923s]   138 | ::contentReference[oaicite:3]{index=3}
+[15.923s]       |                                       [01;31m[K^[m[K
+[15.924s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:15:46:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.924s]    15 | class FlatAreaDetector : public rclcpp::Node [01;36m[K{[m[K
+[15.924s]       |                                              [01;36m[K^[m[K
+[16.334s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:[m[K In member function ‘[01m[Kvoid FlatAreaDetector::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[16.334s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:117:24:[m[K [01;31m[Kerror: [m[K‘[01m[KSelfAdjointEigenSolver[m[K’ is not a member of ‘[01m[KEigen[m[K’
+[16.335s]   117 |                 Eigen::[01;31m[KSelfAdjointEigenSolver[m[K<Eigen::Matrix3f> eigen_solver(covariance_matrix, Eigen::ComputeEigenvalues);
+[16.335s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.337s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:117:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[16.337s]   117 |                Eigen::SelfAdjointEigenSolver<Eigen::Matrix3f[01;31m[K>[m[K eigen_solver(covariance_matrix, Eigen::ComputeEigenvalues);
+[16.337s]       |                                                             [01;31m[K^[m[K
+[16.337s] 
+[16.337s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:117:103:[m[K [01;31m[Kerror: [m[K‘[01m[KComputeEigenvalues[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KComputeEigenvectors[m[K’?
+[16.337s]   117 | ver<Eigen::Matrix3f> eigen_solver(covariance_matrix, Eigen::[01;31m[KComputeEigenvalues[m[K);
+[16.338s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[16.338s]       |                                                             [32m[KComputeEigenvectors[m[K
+[16.397s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:117:64:[m[K [01;31m[Kerror: [m[K‘[01m[Keigen_solver[m[K’ was not declared in this scope
+[16.405s]   117 |              Eigen::SelfAdjointEigenSolver<Eigen::Matrix3f> [01;31m[Keigen_solver[m[K(covariance_matrix, Eigen::ComputeEigenvalues);
+[16.405s]       |                                                             [01;31m[K^~~~~~~~~~~~[m[K
+[16.406s] 
+[16.406s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:137:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klanding[m[K’ has not been declared
+[16.406s]   137 |         [01;31m[Klanding[m[K
+[16.406s]       |         [01;31m[K^~~~~~~[m[K
+[16.436s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:138:20:[m[K [01;31m[Kerror: [m[K‘[01m[Koaicite[m[K’ was not declared in this scope
+[16.436s]   138 | ::contentReference[[01;31m[Koaicite[m[K:3]{index=3}
+[16.436s]       |                    [01;31m[K^~~~~~~[m[K
+[16.436s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:138:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K:[m[K’ token
+[16.436s]   138 | ::contentReference[oaicite[01;31m[K:[m[K3]{index=3}
+[16.436s]       |                           [01;31m[K^[m[K
+[16.437s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:138:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[16.437s]   138 | ::contentReference[oaicite:3]{index=3}
+[16.437s]       |                                       [01;31m[K^[m[K
+[16.442s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:34:81:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[16.442s]    34 | ointCloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg) [01;36m[K{[m[K
+[16.442s]       |                                                                       [01;36m[K^[m[K
+[16.442s] 
+[16.442s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:[m[K At global scope:
+[16.442s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:138:39:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[16.443s]   138 | ::contentReference[oaicite:3]{index=3}
+[16.443s]       |                                       [01;31m[K^[m[K
+[26.559s] gmake[2]: *** [CMakeFiles/flat_area_detector.dir/build.make:76: CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o] Error 1
+[26.559s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/flat_area_detector.dir/all] Error 2
+[26.561s] gmake: *** [Makefile:146: all] Error 2
+[26.567s] Invoked command in '/home/nits/ros2_ws/build/landing_area_detector' returned '2': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6

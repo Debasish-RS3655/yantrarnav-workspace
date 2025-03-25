@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000852] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001440] (-) JobUnselected: {'identifier': 'drone_takeoff'}
+[0.001792] (-) JobUnselected: {'identifier': 'drone_vio_py'}
+[0.002199] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.002328] (-) JobUnselected: {'identifier': 'local_zeroing_pkg'}
+[0.002465] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.002571] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002660] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002753] (drone_vio_cpp) JobQueued: {'identifier': 'drone_vio_cpp', 'dependencies': OrderedDict()}
+[0.002848] (drone_vio_cpp) JobStarted: {'identifier': 'drone_vio_cpp'}
+[0.027354] (drone_vio_cpp) JobProgress: {'identifier': 'drone_vio_cpp', 'progress': 'cmake'}
+[0.030625] (drone_vio_cpp) JobProgress: {'identifier': 'drone_vio_cpp', 'progress': 'build'}
+[0.032512] (drone_vio_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nits/ros2_ws/build/drone_vio_cpp', '--', '-j6', '-l6'], 'cwd': '/home/nits/ros2_ws/build/drone_vio_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '27954'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2009,unix/ubuntu:/tmp/.ICE-unix/2009'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad4817eb_21e1_4620_be49_46c5183225fe'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/drone_vio_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper')]), 'shell': False}
+[0.099012] (-) TimerEvent: {}
+[0.199760] (-) TimerEvent: {}
+[0.275776] (drone_vio_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odom_to_vision_pose\x1b[0m\n'}
+[0.299948] (-) TimerEvent: {}
+[0.383016] (drone_vio_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o\x1b[0m\n'}
+[0.400113] (-) TimerEvent: {}
+[0.500778] (-) TimerEvent: {}
+[0.601805] (-) TimerEvent: {}
+[0.702894] (-) TimerEvent: {}
+[0.803609] (-) TimerEvent: {}
+[0.904691] (-) TimerEvent: {}
+[1.005557] (-) TimerEvent: {}
+[1.106262] (-) TimerEvent: {}
+[1.207060] (-) TimerEvent: {}
+[1.307787] (-) TimerEvent: {}
+[1.408498] (-) TimerEvent: {}
+[1.513200] (-) TimerEvent: {}
+[1.613972] (-) TimerEvent: {}
+[1.714957] (-) TimerEvent: {}
+[1.815774] (-) TimerEvent: {}
+[1.917428] (-) TimerEvent: {}
+[2.018201] (-) TimerEvent: {}
+[2.119235] (-) TimerEvent: {}
+[2.220331] (-) TimerEvent: {}
+[2.321044] (-) TimerEvent: {}
+[2.422805] (-) TimerEvent: {}
+[2.523593] (-) TimerEvent: {}
+[2.624360] (-) TimerEvent: {}
+[2.726459] (-) TimerEvent: {}
+[2.828297] (-) TimerEvent: {}
+[2.929082] (-) TimerEvent: {}
+[3.037223] (-) TimerEvent: {}
+[3.139651] (-) TimerEvent: {}
+[3.240391] (-) TimerEvent: {}
+[3.341149] (-) TimerEvent: {}
+[3.441949] (-) TimerEvent: {}
+[3.542812] (-) TimerEvent: {}
+[3.644268] (-) TimerEvent: {}
+[3.744990] (-) TimerEvent: {}
+[3.845767] (-) TimerEvent: {}
+[3.946784] (-) TimerEvent: {}
+[4.047537] (-) TimerEvent: {}
+[4.148295] (-) TimerEvent: {}
+[4.249353] (-) TimerEvent: {}
+[4.350157] (-) TimerEvent: {}
+[4.450900] (-) TimerEvent: {}
+[4.552567] (-) TimerEvent: {}
+[4.653327] (-) TimerEvent: {}
+[4.754034] (-) TimerEvent: {}
+[4.854826] (-) TimerEvent: {}
+[4.955615] (-) TimerEvent: {}
+[5.056441] (-) TimerEvent: {}
+[5.157349] (-) TimerEvent: {}
+[5.258786] (-) TimerEvent: {}
+[5.359587] (-) TimerEvent: {}
+[5.460368] (-) TimerEvent: {}
+[5.561307] (-) TimerEvent: {}
+[5.662397] (-) TimerEvent: {}
+[5.763245] (-) TimerEvent: {}
+[5.864319] (-) TimerEvent: {}
+[5.965129] (-) TimerEvent: {}
+[6.065994] (-) TimerEvent: {}
+[6.167880] (-) TimerEvent: {}
+[6.268655] (-) TimerEvent: {}
+[6.369428] (-) TimerEvent: {}
+[6.470124] (-) TimerEvent: {}
+[6.570835] (-) TimerEvent: {}
+[6.672307] (-) TimerEvent: {}
+[6.773063] (-) TimerEvent: {}
+[6.875476] (-) TimerEvent: {}
+[6.976187] (-) TimerEvent: {}
+[7.076904] (-) TimerEvent: {}
+[7.177764] (-) TimerEvent: {}
+[7.278583] (-) TimerEvent: {}
+[7.379435] (-) TimerEvent: {}
+[7.480174] (-) TimerEvent: {}
+[7.580899] (-) TimerEvent: {}
+[7.681620] (-) TimerEvent: {}
+[7.782391] (-) TimerEvent: {}
+[7.883088] (-) TimerEvent: {}
+[7.964982] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.966014] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass tf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KgetRPY\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetRPY\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.966220] (drone_vio_cpp) StderrLine: {'line': b'   69 |         q_ned.setRPY(q_enu.\x1b[01;31m\x1b[KgetRPY\x1b[m\x1b[K()[1], q_enu.getRPY()[0], q_enu.getRPY()[2]);\n'}
+[7.966367] (drone_vio_cpp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.966500] (drone_vio_cpp) StderrLine: {'line': b'      |                            \x1b[32m\x1b[KsetRPY\x1b[m\x1b[K\n'}
+[7.966625] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass tf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KgetRPY\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetRPY\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.966753] (drone_vio_cpp) StderrLine: {'line': b'   69 |         q_ned.setRPY(q_enu.getRPY()[1], q_enu.\x1b[01;31m\x1b[KgetRPY\x1b[m\x1b[K()[0], q_enu.getRPY()[2]);\n'}
+[7.966871] (drone_vio_cpp) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.966990] (drone_vio_cpp) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[KsetRPY\x1b[m\x1b[K\n'}
+[7.967106] (drone_vio_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass tf2::Quaternion\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KgetRPY\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KsetRPY\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.967227] (drone_vio_cpp) StderrLine: {'line': b'   69 |         q_ned.setRPY(q_enu.getRPY()[1], q_enu.getRPY()[0], q_enu.\x1b[01;31m\x1b[KgetRPY\x1b[m\x1b[K()[2]);\n'}
+[7.967339] (drone_vio_cpp) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.967450] (drone_vio_cpp) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[KsetRPY\x1b[m\x1b[K\n'}
+[7.983265] (-) TimerEvent: {}
+[8.083951] (-) TimerEvent: {}
+[8.184640] (-) TimerEvent: {}
+[8.285373] (-) TimerEvent: {}
+[8.386100] (-) TimerEvent: {}
+[8.486831] (-) TimerEvent: {}
+[8.588893] (-) TimerEvent: {}
+[8.690063] (-) TimerEvent: {}
+[8.790805] (-) TimerEvent: {}
+[8.891770] (-) TimerEvent: {}
+[8.992784] (-) TimerEvent: {}
+[9.093922] (-) TimerEvent: {}
+[9.194650] (-) TimerEvent: {}
+[9.295551] (-) TimerEvent: {}
+[9.396370] (-) TimerEvent: {}
+[9.497095] (-) TimerEvent: {}
+[9.600096] (-) TimerEvent: {}
+[9.700728] (-) TimerEvent: {}
+[9.801427] (-) TimerEvent: {}
+[9.902860] (-) TimerEvent: {}
+[10.003603] (-) TimerEvent: {}
+[10.105160] (-) TimerEvent: {}
+[10.205900] (-) TimerEvent: {}
+[10.306636] (-) TimerEvent: {}
+[10.407324] (-) TimerEvent: {}
+[10.508053] (-) TimerEvent: {}
+[10.609508] (-) TimerEvent: {}
+[10.711115] (-) TimerEvent: {}
+[10.814350] (-) TimerEvent: {}
+[10.917701] (-) TimerEvent: {}
+[11.018412] (-) TimerEvent: {}
+[11.119122] (-) TimerEvent: {}
+[11.219802] (-) TimerEvent: {}
+[11.321240] (-) TimerEvent: {}
+[11.421956] (-) TimerEvent: {}
+[11.522762] (-) TimerEvent: {}
+[11.623597] (-) TimerEvent: {}
+[11.724368] (-) TimerEvent: {}
+[11.825155] (-) TimerEvent: {}
+[11.925876] (-) TimerEvent: {}
+[12.026602] (-) TimerEvent: {}
+[12.127327] (-) TimerEvent: {}
+[12.228218] (-) TimerEvent: {}
+[12.329230] (-) TimerEvent: {}
+[12.430678] (-) TimerEvent: {}
+[12.531445] (-) TimerEvent: {}
+[12.634542] (-) TimerEvent: {}
+[12.735267] (-) TimerEvent: {}
+[12.836592] (-) TimerEvent: {}
+[12.937403] (-) TimerEvent: {}
+[13.038224] (-) TimerEvent: {}
+[13.141302] (-) TimerEvent: {}
+[13.242083] (-) TimerEvent: {}
+[13.343236] (-) TimerEvent: {}
+[13.443949] (-) TimerEvent: {}
+[13.544670] (-) TimerEvent: {}
+[13.645496] (-) TimerEvent: {}
+[13.746290] (-) TimerEvent: {}
+[13.847042] (-) TimerEvent: {}
+[13.947808] (-) TimerEvent: {}
+[14.048521] (-) TimerEvent: {}
+[14.149302] (-) TimerEvent: {}
+[14.249992] (-) TimerEvent: {}
+[14.350696] (-) TimerEvent: {}
+[14.451402] (-) TimerEvent: {}
+[14.552106] (-) TimerEvent: {}
+[14.652808] (-) TimerEvent: {}
+[14.753537] (-) TimerEvent: {}
+[14.854213] (-) TimerEvent: {}
+[14.954988] (-) TimerEvent: {}
+[15.055826] (-) TimerEvent: {}
+[15.156536] (-) TimerEvent: {}
+[15.257218] (-) TimerEvent: {}
+[15.357975] (-) TimerEvent: {}
+[15.459003] (-) TimerEvent: {}
+[15.559760] (-) TimerEvent: {}
+[15.649531] (drone_vio_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1\n'}
+[15.650468] (drone_vio_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2\n'}
+[15.650905] (drone_vio_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.659919] (-) TimerEvent: {}
+[15.670206] (drone_vio_cpp) CommandEnded: {'returncode': 2}
+[15.734406] (drone_vio_cpp) JobEnded: {'identifier': 'drone_vio_cpp', 'rc': 2}
+[15.738222] (-) EventReactorShutdown: {}

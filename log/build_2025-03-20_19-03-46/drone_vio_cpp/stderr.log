@@ -1,0 +1,105 @@
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In member function ‘[01m[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion, geometry_msgs::msg::Pose_<std::allocator<void> >::_orientation_type&)[m[K’
+   60 |         [01;31m[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)[m[K;
+      |         [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:56[m[K,
+                 from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+  129 | B [01;36m[KtoMsg[m[K(const A & a);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:60:19:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+   60 |         [01;36m[Ktf2::toMsg(pose_in_base.getRotation(), pose_out.orientation)[m[K;
+      |         [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Vector3 tf2::toMsg(const tf2::Vector3&)[m[K’
+  110 | geometry_msgs::msg::Vector3 [01;36m[KtoMsg[m[K(const tf2::Vector3 & in)
+      |                             [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:110:29:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Vector3Stamped tf2::toMsg(const Vector3Stamped&)[m[K’
+  182 | geometry_msgs::msg::Vector3Stamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Vector3Stamped & in)
+      |                                    [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:182:36:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point&)[m[K’
+  230 | geometry_msgs::msg::Point & [01;36m[KtoMsg[m[K(const tf2::Vector3 & in, geometry_msgs::msg::Point & out)
+      |                             [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:230:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  230 | geometry_msgs::msg::Point & toMsg([01;36m[Kconst tf2::Vector3 & in[m[K, geometry_msgs::msg::Point & out)
+      |                                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:31:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point32& tf2::toMsg(const tf2::Vector3&, geometry_msgs::msg::Point32&)[m[K’
+  278 | geometry_msgs::msg::Point32 & [01;36m[KtoMsg[m[K(const tf2::Vector3 & in, geometry_msgs::msg::Point32 & out)
+      |                               [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:278:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  278 | geometry_msgs::msg::Point32 & toMsg([01;36m[Kconst tf2::Vector3 & in[m[K, geometry_msgs::msg::Point32 & out)
+      |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PointStamped tf2::toMsg(const PointStamped&)[m[K’
+  353 | geometry_msgs::msg::PointStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PointStamped & in)
+      |                                  [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:353:34:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseStamped tf2::toMsg(const PoseStamped&)[m[K’
+  433 | geometry_msgs::msg::PoseStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PoseStamped & in)
+      |                                 [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:433:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Polygon tf2::toMsg(const Polygon&)[m[K’
+  480 | geometry_msgs::msg::Polygon [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Polygon & in)
+      |                             [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:480:29:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PolygonStamped tf2::toMsg(const PolygonStamped&)[m[K’
+  551 | geometry_msgs::msg::PolygonStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PolygonStamped & in)
+      |                                    [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:551:36:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseWithCovariance tf2::toMsg(const PoseWithCovariance&)[m[K’
+  724 | geometry_msgs::msg::PoseWithCovariance [01;36m[KtoMsg[m[K(const geometry_msgs::msg::PoseWithCovariance & in)
+      |                                        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:724:40:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseWithCovarianceStamped tf2::toMsg(const PoseWithCovarianceStamped&)[m[K’
+  823 | geometry_msgs::msg::PoseWithCovarianceStamped [01;36m[KtoMsg[m[K(
+      |                                               [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:823:47:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Quaternion tf2::toMsg(const tf2::Quaternion&)[m[K’
+  919 | geometry_msgs::msg::Quaternion [01;36m[KtoMsg[m[K(const tf2::Quaternion & in)
+      |                                [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:919:32:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const QuaternionStamped&)[m[K’
+  998 | geometry_msgs::msg::QuaternionStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::QuaternionStamped & in)
+      |                                       [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:998:39:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::QuaternionStamped tf2::toMsg(const tf2::Stamped<tf2::Quaternion>&)[m[K’
+ 1022 | geometry_msgs::msg::QuaternionStamped [01;36m[KtoMsg[m[K(const tf2::Stamped<tf2::Quaternion> & in)
+      |                                       [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1022:39:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Transform tf2::toMsg(const tf2::Transform&)[m[K’
+ 1060 | geometry_msgs::msg::Transform [01;36m[KtoMsg[m[K(const tf2::Transform & in)
+      |                               [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1060:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Transform&)[m[K’
+ 1076 | void [01;36m[KtoMsg[m[K(const tf2::Transform & in, geometry_msgs::msg::Transform & out)
+      |      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1076:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Transform&[m[K’
+ 1076 | void toMsg([01;36m[Kconst tf2::Transform & in[m[K, geometry_msgs::msg::Transform & out)
+      |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const TransformStamped&)[m[K’
+ 1187 | geometry_msgs::msg::TransformStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::TransformStamped & in)
+      |                                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1187:38:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped tf2::toMsg(const tf2::Stamped<tf2::Transform>&)[m[K’
+ 1226 | geometry_msgs::msg::TransformStamped [01;36m[KtoMsg[m[K(const tf2::Stamped<tf2::Transform> & in)
+      |                                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1226:38:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Pose tf2::toMsg(const Pose&)[m[K’
+ 1275 | geometry_msgs::msg::Pose [01;36m[KtoMsg[m[K(const geometry_msgs::msg::Pose & in)
+      |                          [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1275:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid tf2::toMsg(const tf2::Transform&, geometry_msgs::msg::Pose&)[m[K’
+ 1296 | void [01;36m[KtoMsg[m[K(const tf2::Transform & in, geometry_msgs::msg::Pose & out)
+      |      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1296:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Transform&[m[K’
+ 1296 | void toMsg([01;36m[Kconst tf2::Transform & in[m[K, geometry_msgs::msg::Pose & out)
+      |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::WrenchStamped tf2::toMsg(const WrenchStamped&)[m[K’
+ 1454 | geometry_msgs::msg::WrenchStamped [01;36m[KtoMsg[m[K(const geometry_msgs::msg::WrenchStamped & in)
+      |                                   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1454:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

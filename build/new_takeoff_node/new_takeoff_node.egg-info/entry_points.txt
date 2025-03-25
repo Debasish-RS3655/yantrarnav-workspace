@@ -1,0 +1,2 @@
+[console_scripts]
+takeoff_node = new_takeoff_node.takeoff_node:main

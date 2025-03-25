@@ -1,0 +1,17 @@
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In member function ‘[01m[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:57:55:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} to non-scalar type ‘[01m[Kgeometry_msgs::msg::Pose[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} requested
+   57 |         geometry_msgs::msg::Pose pose_out = [01;31m[Ktf2::toMsg(pose_in_base)[m[K;
+      |                                             [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetRoll[m[K’
+   69 |         q_ned.setRPY(q_enu.[01;31m[KgetRoll[m[K(), -q_enu.getPitch(), -q_enu.getYaw());
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetPitch[m[K’
+   69 |         q_ned.setRPY(q_enu.getRoll(), -q_enu.[01;31m[KgetPitch[m[K(), -q_enu.getYaw());
+      |                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetYaw[m[K’; did you mean ‘[01m[KgetY[m[K’?
+   69 |         q_ned.setRPY(q_enu.getRoll(), -q_enu.getPitch(), -q_enu.[01;31m[KgetYaw[m[K());
+      |                                                                 [01;31m[K^~~~~~[m[K
+      |                                                                 [32m[KgetY[m[K
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

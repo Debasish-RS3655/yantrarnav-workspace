@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.001010] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001335] (-) JobUnselected: {'identifier': 'drone_takeoff'}
+[0.001672] (-) JobUnselected: {'identifier': 'drone_vio_cpp'}
+[0.001793] (-) JobUnselected: {'identifier': 'drone_vio_py'}
+[0.001888] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.001977] (-) JobUnselected: {'identifier': 'local_zeroing_pkg'}
+[0.002062] (-) JobUnselected: {'identifier': 'mavros_takeoff'}
+[0.002145] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.002227] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002310] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002392] (-) JobUnselected: {'identifier': 'vision_to_local_pose'}
+[0.002483] (new_takeoff_node) JobQueued: {'identifier': 'new_takeoff_node', 'dependencies': OrderedDict()}
+[0.002580] (new_takeoff_node) JobStarted: {'identifier': 'new_takeoff_node'}
+[0.099101] (-) TimerEvent: {}
+[0.199720] (-) TimerEvent: {}
+[0.300407] (-) TimerEvent: {}
+[0.401024] (-) TimerEvent: {}
+[0.501704] (-) TimerEvent: {}
+[0.602386] (-) TimerEvent: {}
+[0.703007] (-) TimerEvent: {}
+[0.803881] (-) TimerEvent: {}
+[0.904504] (-) TimerEvent: {}
+[1.005134] (-) TimerEvent: {}
+[1.105811] (-) TimerEvent: {}
+[1.206446] (-) TimerEvent: {}
+[1.307048] (-) TimerEvent: {}
+[1.407664] (-) TimerEvent: {}
+[1.508282] (-) TimerEvent: {}
+[1.609011] (-) TimerEvent: {}
+[1.709812] (-) TimerEvent: {}
+[1.810622] (-) TimerEvent: {}
+[1.911431] (-) TimerEvent: {}
+[2.012303] (-) TimerEvent: {}
+[2.087935] (new_takeoff_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/nits/ros2_ws/build/new_takeoff_node/build'], 'cwd': '/home/nits/ros2_ws/build/new_takeoff_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nits', 'ROS_PACKAGE_PATH': '/home/nits/ros2_ws/install/flat_area_detector/share', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/nits', 'OLDPWD': '/home/nits', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2031', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nits/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'nits', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nits', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1992,unix/ubuntu:/tmp/.ICE-unix/1992', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/363263a5_1744_49ea_bb1d_3d0e769f05c0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.137', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nits/ros2_ws/install/vision_to_local_pose:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/new_takeoff_node:/home/nits/ros2_ws/install/mavros_takeoff:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nits/ros2_ws/build/new_takeoff_node', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:/home/nits/ros2_ws/build/new_takeoff_node:/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages:/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper'}, 'shell': False}
+[2.112516] (-) TimerEvent: {}
+[2.213183] (-) TimerEvent: {}
+[2.313906] (-) TimerEvent: {}
+[2.414608] (-) TimerEvent: {}
+[2.515654] (-) TimerEvent: {}
+[2.616410] (-) TimerEvent: {}
+[2.717388] (-) TimerEvent: {}
+[2.818124] (-) TimerEvent: {}
+[2.891596] (new_takeoff_node) StdoutLine: {'line': b'running develop\n'}
+[2.918284] (-) TimerEvent: {}
+[3.018934] (-) TimerEvent: {}
+[3.119562] (-) TimerEvent: {}
+[3.220518] (-) TimerEvent: {}
+[3.321472] (-) TimerEvent: {}
+[3.422386] (-) TimerEvent: {}
+[3.467120] (new_takeoff_node) StdoutLine: {'line': b'Removing /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new-takeoff-node.egg-link (link to .)\n'}
+[3.522599] (-) TimerEvent: {}
+[3.597598] (new_takeoff_node) CommandEnded: {'returncode': 0}
+[3.599952] (new_takeoff_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/new_takeoff_node', 'build', '--build-base', '/home/nits/ros2_ws/build/new_takeoff_node/build', 'install', '--record', '/home/nits/ros2_ws/build/new_takeoff_node/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/nits/ros2_ws/src/new_takeoff_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nits', 'ROS_PACKAGE_PATH': '/home/nits/ros2_ws/install/flat_area_detector/share', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/nits', 'OLDPWD': '/home/nits', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2031', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nits/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'nits', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nits', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1992,unix/ubuntu:/tmp/.ICE-unix/1992', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/363263a5_1744_49ea_bb1d_3d0e769f05c0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.137', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nits/ros2_ws/install/vision_to_local_pose:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/new_takeoff_node:/home/nits/ros2_ws/install/mavros_takeoff:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nits/ros2_ws/build/new_takeoff_node', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:/home/nits/ros2_ws/build/new_takeoff_node:/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages:/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper'}, 'shell': False}
+[3.622771] (-) TimerEvent: {}
+[3.723467] (-) TimerEvent: {}
+[3.824283] (-) TimerEvent: {}
+[3.925010] (-) TimerEvent: {}
+[4.025706] (-) TimerEvent: {}
+[4.126411] (-) TimerEvent: {}
+[4.227115] (-) TimerEvent: {}
+[4.275321] (new_takeoff_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.319491] (new_takeoff_node) StdoutLine: {'line': b'writing ../../build/new_takeoff_node/new_takeoff_node.egg-info/PKG-INFO\n'}
+[4.320156] (new_takeoff_node) StdoutLine: {'line': b'writing dependency_links to ../../build/new_takeoff_node/new_takeoff_node.egg-info/dependency_links.txt\n'}
+[4.320799] (new_takeoff_node) StdoutLine: {'line': b'writing entry points to ../../build/new_takeoff_node/new_takeoff_node.egg-info/entry_points.txt\n'}
+[4.321374] (new_takeoff_node) StdoutLine: {'line': b'writing requirements to ../../build/new_takeoff_node/new_takeoff_node.egg-info/requires.txt\n'}
+[4.321791] (new_takeoff_node) StdoutLine: {'line': b'writing top-level names to ../../build/new_takeoff_node/new_takeoff_node.egg-info/top_level.txt\n'}
+[4.327260] (-) TimerEvent: {}
+[4.410124] (new_takeoff_node) StdoutLine: {'line': b"reading manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'\n"}
+[4.413597] (new_takeoff_node) StdoutLine: {'line': b"writing manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'\n"}
+[4.414171] (new_takeoff_node) StdoutLine: {'line': b'running build\n'}
+[4.414370] (new_takeoff_node) StdoutLine: {'line': b'running build_py\n'}
+[4.414888] (new_takeoff_node) StdoutLine: {'line': b'copying new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node\n'}
+[4.415679] (new_takeoff_node) StdoutLine: {'line': b'copying new_takeoff_node/__init__.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node\n'}
+[4.417440] (new_takeoff_node) StdoutLine: {'line': b'running install\n'}
+[4.427458] (-) TimerEvent: {}
+[4.428505] (new_takeoff_node) StdoutLine: {'line': b'running install_lib\n'}
+[4.473215] (new_takeoff_node) StdoutLine: {'line': b'creating /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node\n'}
+[4.473813] (new_takeoff_node) StdoutLine: {'line': b'copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node\n'}
+[4.474433] (new_takeoff_node) StdoutLine: {'line': b'copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/__init__.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node\n'}
+[4.476079] (new_takeoff_node) StdoutLine: {'line': b'byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/takeoff_node.py to takeoff_node.cpython-310.pyc\n'}
+[4.480886] (new_takeoff_node) StdoutLine: {'line': b'byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/__init__.py to __init__.cpython-310.pyc\n'}
+[4.481633] (new_takeoff_node) StdoutLine: {'line': b'running install_data\n'}
+[4.482973] (new_takeoff_node) StdoutLine: {'line': b'copying resource/new_takeoff_node -> /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages\n'}
+[4.483583] (new_takeoff_node) StdoutLine: {'line': b'copying package.xml -> /home/nits/ros2_ws/install/new_takeoff_node/share/new_takeoff_node\n'}
+[4.483885] (new_takeoff_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.527593] (-) TimerEvent: {}
+[4.529472] (new_takeoff_node) StdoutLine: {'line': b'Copying ../../build/new_takeoff_node/new_takeoff_node.egg-info to /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node-0.0.0-py3.10.egg-info\n'}
+[4.531969] (new_takeoff_node) StdoutLine: {'line': b'running install_scripts\n'}
+[4.627753] (-) TimerEvent: {}
+[4.728602] (-) TimerEvent: {}
+[4.829224] (-) TimerEvent: {}
+[4.888442] (new_takeoff_node) StdoutLine: {'line': b'Installing takeoff_node script to /home/nits/ros2_ws/install/new_takeoff_node/lib/new_takeoff_node\n'}
+[4.892167] (new_takeoff_node) StdoutLine: {'line': b"writing list of installed files to '/home/nits/ros2_ws/build/new_takeoff_node/install.log'\n"}
+[4.929432] (-) TimerEvent: {}
+[4.995835] (new_takeoff_node) CommandEnded: {'returncode': 0}
+[5.028718] (new_takeoff_node) JobEnded: {'identifier': 'new_takeoff_node', 'rc': 0}
+[5.030457] (-) TimerEvent: {}
+[5.030674] (-) EventReactorShutdown: {}

@@ -1,0 +1,8 @@
+[01m[K/home/nits/ros2_ws/src/local_zeroing_pkg/src/local_zeroing_node.cpp:24:52:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{0.0, 0.0, 0.0}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgeometry_msgs::msg::Point[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’}
+   24 |     geometry_msgs::msg::Point origin_{0.0, 0.0, 0.0[01;31m[K}[m[K;
+      |                                                    [01;31m[K^[m[K
+      |                                                    [01;31m[K|[m[K
+      |                                                    [01;31m[K<brace-enclosed initializer list>[m[K
+gmake[2]: *** [CMakeFiles/local_zeroing_node.dir/build.make:76: CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/local_zeroing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

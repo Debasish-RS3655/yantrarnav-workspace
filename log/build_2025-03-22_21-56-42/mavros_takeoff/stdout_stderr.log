@@ -1,0 +1,26 @@
+/home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/mavros_takeoff/mavros_takeoff.egg-info/PKG-INFO
+writing dependency_links to ../../build/mavros_takeoff/mavros_takeoff.egg-info/dependency_links.txt
+writing requirements to ../../build/mavros_takeoff/mavros_takeoff.egg-info/requires.txt
+writing top-level names to ../../build/mavros_takeoff/mavros_takeoff.egg-info/top_level.txt
+reading manifest file '../../build/mavros_takeoff/mavros_takeoff.egg-info/SOURCES.txt'
+writing manifest file '../../build/mavros_takeoff/mavros_takeoff.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mavros_takeoff/setup.py -> /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+copying mavros_takeoff/takeoff_node.py -> /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+copying mavros_takeoff/__init__.py -> /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+running install
+running install_lib
+copying /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff/setup.py -> /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff
+byte-compiling /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff/setup.py to setup.cpython-310.pyc
+running install_data
+copying resource/mavros_takeoff -> /home/nits/ros2_ws/install/mavros_takeoff/share/ament_index/resource_index/packages
+copying package.xml -> /home/nits/ros2_ws/install/mavros_takeoff/share/mavros_takeoff
+running install_egg_info
+removing '/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mavros_takeoff/mavros_takeoff.egg-info to /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/nits/ros2_ws/build/mavros_takeoff/install.log'

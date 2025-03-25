@@ -1,0 +1,10 @@
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/uninstall.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/local_zeroing_pkg_uninstall.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/local_zeroing_node.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/test.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/edit_cache.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/rebuild_cache.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/list_install_components.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/install.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/install/local.dir
+/home/nits/ros2_ws/build/local_zeroing_pkg/CMakeFiles/install/strip.dir

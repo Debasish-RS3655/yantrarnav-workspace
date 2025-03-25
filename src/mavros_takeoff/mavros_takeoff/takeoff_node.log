@@ -1,0 +1,4 @@
+2025-03-23 02:05:01,704 - INFO - Service /mavros/cmd/takeoff is available
+2025-03-23 02:05:01,707 - INFO - Service /mavros/cmd/arming is available
+2025-03-23 02:05:01,960 - INFO - Service /mavros/set_mode is available
+2025-03-23 02:05:01,960 - INFO - Waiting for MAVROS state...

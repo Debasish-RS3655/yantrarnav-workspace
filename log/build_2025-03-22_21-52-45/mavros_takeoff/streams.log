@@ -1,0 +1,33 @@
+[2.667s] Invoking command in '/home/nits/ros2_ws/src/mavros_takeoff': PYTHONPATH=/home/nits/ros2_ws/build/mavros_takeoff/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mavros_takeoff build --build-base /home/nits/ros2_ws/build/mavros_takeoff/build install --record /home/nits/ros2_ws/build/mavros_takeoff/install.log --single-version-externally-managed install_data
+[3.094s] /home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[3.095s]   warnings.warn(msg)
+[3.363s] running egg_info
+[3.405s] creating ../../build/mavros_takeoff/mavros_takeoff.egg-info
+[3.405s] writing ../../build/mavros_takeoff/mavros_takeoff.egg-info/PKG-INFO
+[3.407s] writing dependency_links to ../../build/mavros_takeoff/mavros_takeoff.egg-info/dependency_links.txt
+[3.408s] writing requirements to ../../build/mavros_takeoff/mavros_takeoff.egg-info/requires.txt
+[3.408s] writing top-level names to ../../build/mavros_takeoff/mavros_takeoff.egg-info/top_level.txt
+[3.408s] writing manifest file '../../build/mavros_takeoff/mavros_takeoff.egg-info/SOURCES.txt'
+[3.513s] reading manifest file '../../build/mavros_takeoff/mavros_takeoff.egg-info/SOURCES.txt'
+[3.515s] writing manifest file '../../build/mavros_takeoff/mavros_takeoff.egg-info/SOURCES.txt'
+[3.516s] running build
+[3.516s] running build_py
+[3.517s] creating /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+[3.518s] copying mavros_takeoff/takeoff_node.py -> /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+[3.518s] copying mavros_takeoff/__init__.py -> /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff
+[3.518s] running install
+[3.534s] running install_lib
+[3.587s] creating /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff
+[3.588s] copying /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff/takeoff_node.py -> /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff
+[3.589s] copying /home/nits/ros2_ws/build/mavros_takeoff/build/lib/mavros_takeoff/__init__.py -> /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff
+[3.590s] byte-compiling /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff/takeoff_node.py to takeoff_node.cpython-310.pyc
+[3.593s] byte-compiling /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff/__init__.py to __init__.cpython-310.pyc
+[3.594s] running install_data
+[3.595s] creating /home/nits/ros2_ws/install/mavros_takeoff/share/ament_index/resource_index/packages
+[3.596s] copying resource/mavros_takeoff -> /home/nits/ros2_ws/install/mavros_takeoff/share/ament_index/resource_index/packages
+[3.597s] copying package.xml -> /home/nits/ros2_ws/install/mavros_takeoff/share/mavros_takeoff
+[3.597s] running install_egg_info
+[3.648s] Copying ../../build/mavros_takeoff/mavros_takeoff.egg-info to /home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages/mavros_takeoff-0.0.0-py3.10.egg-info
+[3.650s] running install_scripts
+[4.066s] writing list of installed files to '/home/nits/ros2_ws/build/mavros_takeoff/install.log'
+[4.196s] Invoked command in '/home/nits/ros2_ws/src/mavros_takeoff' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/mavros_takeoff/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mavros_takeoff build --build-base /home/nits/ros2_ws/build/mavros_takeoff/build install --record /home/nits/ros2_ws/build/mavros_takeoff/install.log --single-version-externally-managed install_data

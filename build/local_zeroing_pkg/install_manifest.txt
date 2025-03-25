@@ -1,0 +1,16 @@
+/home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/package_run_dependencies/local_zeroing_pkg
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/parent_prefix_path/local_zeroing_pkg
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.sh
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.dsv
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.sh
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.dsv
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.bash
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.sh
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.zsh
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.dsv
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.dsv
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/packages/local_zeroing_pkg
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig.cmake
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig-version.cmake
+/home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.xml

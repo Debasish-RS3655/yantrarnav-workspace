@@ -1,0 +1,12 @@
+[01m[K/home/nits/ros2_ws/src/local_zeroing_pkg/src/local_zeroing_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_[m[K’ does not name a type
+   25 |     [01;31m[Korigin_[m[K.x = 0.0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/nits/ros2_ws/src/local_zeroing_pkg/src/local_zeroing_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_[m[K’ does not name a type
+   26 |     [01;31m[Korigin_[m[K.y = 0.0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/nits/ros2_ws/src/local_zeroing_pkg/src/local_zeroing_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_[m[K’ does not name a type
+   27 |     [01;31m[Korigin_[m[K.z = 0.0;
+      |     [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/local_zeroing_node.dir/build.make:76: CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/local_zeroing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

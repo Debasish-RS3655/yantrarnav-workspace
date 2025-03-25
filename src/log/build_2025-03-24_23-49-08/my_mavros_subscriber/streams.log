@@ -1,0 +1,33 @@
+[2.691s] Invoking command in '/home/nits/ros2_ws/src/my_mavros_subscriber': PYTHONPATH=/home/nits/ros2_ws/src/build/my_mavros_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_mavros_subscriber build --build-base /home/nits/ros2_ws/src/build/my_mavros_subscriber/build install --record /home/nits/ros2_ws/src/build/my_mavros_subscriber/install.log --single-version-externally-managed install_data
+[3.394s] running egg_info
+[3.436s] creating ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info
+[3.437s] writing ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/PKG-INFO
+[3.439s] writing dependency_links to ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/dependency_links.txt
+[3.439s] writing entry points to ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/entry_points.txt
+[3.440s] writing requirements to ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/requires.txt
+[3.440s] writing top-level names to ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/top_level.txt
+[3.443s] writing manifest file '../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/SOURCES.txt'
+[3.536s] reading manifest file '../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/SOURCES.txt'
+[3.539s] writing manifest file '../build/my_mavros_subscriber/my_mavros_subscriber.egg-info/SOURCES.txt'
+[3.541s] running build
+[3.542s] running build_py
+[3.543s] creating /home/nits/ros2_ws/src/build/my_mavros_subscriber/build/lib/my_mavros_subscriber
+[3.545s] copying my_mavros_subscriber/pose_subscriber.py -> /home/nits/ros2_ws/src/build/my_mavros_subscriber/build/lib/my_mavros_subscriber
+[3.548s] copying my_mavros_subscriber/__init__.py -> /home/nits/ros2_ws/src/build/my_mavros_subscriber/build/lib/my_mavros_subscriber
+[3.550s] running install
+[3.562s] running install_lib
+[3.611s] creating /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber
+[3.611s] copying /home/nits/ros2_ws/src/build/my_mavros_subscriber/build/lib/my_mavros_subscriber/pose_subscriber.py -> /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber
+[3.611s] copying /home/nits/ros2_ws/src/build/my_mavros_subscriber/build/lib/my_mavros_subscriber/__init__.py -> /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber
+[3.614s] byte-compiling /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber/pose_subscriber.py to pose_subscriber.cpython-310.pyc
+[3.615s] byte-compiling /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber/__init__.py to __init__.cpython-310.pyc
+[3.615s] running install_data
+[3.616s] creating /home/nits/ros2_ws/src/install/my_mavros_subscriber/share/ament_index/resource_index/packages
+[3.617s] copying resource/my_mavros_subscriber -> /home/nits/ros2_ws/src/install/my_mavros_subscriber/share/ament_index/resource_index/packages
+[3.617s] copying package.xml -> /home/nits/ros2_ws/src/install/my_mavros_subscriber/share/my_mavros_subscriber
+[3.617s] running install_egg_info
+[3.674s] Copying ../build/my_mavros_subscriber/my_mavros_subscriber.egg-info to /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages/my_mavros_subscriber-0.0.0-py3.10.egg-info
+[3.676s] running install_scripts
+[4.168s] Installing pose_subscriber script to /home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/my_mavros_subscriber
+[4.169s] writing list of installed files to '/home/nits/ros2_ws/src/build/my_mavros_subscriber/install.log'
+[4.341s] Invoked command in '/home/nits/ros2_ws/src/my_mavros_subscriber' returned '0': PYTHONPATH=/home/nits/ros2_ws/src/build/my_mavros_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/src/install/my_mavros_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_mavros_subscriber build --build-base /home/nits/ros2_ws/src/build/my_mavros_subscriber/build install --record /home/nits/ros2_ws/src/build/my_mavros_subscriber/install.log --single-version-externally-managed install_data

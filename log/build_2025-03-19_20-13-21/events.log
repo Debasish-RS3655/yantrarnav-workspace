@@ -1,0 +1,267 @@
+[0.000000] (-) TimerEvent: {}
+[0.001032] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001353] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.001697] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001819] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.001911] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002010] (local_zeroing_pkg) JobQueued: {'identifier': 'local_zeroing_pkg', 'dependencies': OrderedDict()}
+[0.002113] (local_zeroing_pkg) JobStarted: {'identifier': 'local_zeroing_pkg'}
+[0.045335] (local_zeroing_pkg) JobProgress: {'identifier': 'local_zeroing_pkg', 'progress': 'cmake'}
+[0.047500] (local_zeroing_pkg) JobProgress: {'identifier': 'local_zeroing_pkg', 'progress': 'build'}
+[0.048968] (local_zeroing_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nits/ros2_ws/build/local_zeroing_pkg', '--', '-j6', '-l6'], 'cwd': '/home/nits/ros2_ws/build/local_zeroing_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg/share:/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '8867'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/local_zeroing_pkg/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1886,unix/ubuntu:/tmp/.ICE-unix/1886'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/643cc622_09eb_45ec_9994_a5fb9ef966b9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/local_zeroing_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper')]), 'shell': False}
+[0.099182] (-) TimerEvent: {}
+[0.113695] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199288] (-) TimerEvent: {}
+[0.299938] (-) TimerEvent: {}
+[0.400841] (-) TimerEvent: {}
+[0.439132] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.501040] (-) TimerEvent: {}
+[0.516157] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.521023] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.532541] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.551203] (local_zeroing_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.574661] (local_zeroing_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601140] (-) TimerEvent: {}
+[0.637514] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.640252] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701353] (-) TimerEvent: {}
+[0.802145] (-) TimerEvent: {}
+[0.855809] (local_zeroing_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.902323] (-) TimerEvent: {}
+[0.947913] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.002510] (-) TimerEvent: {}
+[1.011862] (local_zeroing_pkg) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.102723] (-) TimerEvent: {}
+[1.203542] (-) TimerEvent: {}
+[1.304378] (-) TimerEvent: {}
+[1.405169] (-) TimerEvent: {}
+[1.437185] (local_zeroing_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.476047] (local_zeroing_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.490679] (local_zeroing_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/nits/ros2_ws/build/local_zeroing_pkg\n'}
+[1.505244] (-) TimerEvent: {}
+[1.563971] (local_zeroing_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target local_zeroing_node\x1b[0m\n'}
+[1.605389] (-) TimerEvent: {}
+[1.606005] (local_zeroing_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o\x1b[0m\n'}
+[1.705610] (-) TimerEvent: {}
+[1.806665] (-) TimerEvent: {}
+[1.907486] (-) TimerEvent: {}
+[2.008523] (-) TimerEvent: {}
+[2.109363] (-) TimerEvent: {}
+[2.210183] (-) TimerEvent: {}
+[2.310987] (-) TimerEvent: {}
+[2.411806] (-) TimerEvent: {}
+[2.512615] (-) TimerEvent: {}
+[2.613416] (-) TimerEvent: {}
+[2.714225] (-) TimerEvent: {}
+[2.815076] (-) TimerEvent: {}
+[2.915892] (-) TimerEvent: {}
+[3.016709] (-) TimerEvent: {}
+[3.117515] (-) TimerEvent: {}
+[3.218318] (-) TimerEvent: {}
+[3.319154] (-) TimerEvent: {}
+[3.419988] (-) TimerEvent: {}
+[3.520896] (-) TimerEvent: {}
+[3.621709] (-) TimerEvent: {}
+[3.722501] (-) TimerEvent: {}
+[3.823355] (-) TimerEvent: {}
+[3.924193] (-) TimerEvent: {}
+[4.025061] (-) TimerEvent: {}
+[4.125896] (-) TimerEvent: {}
+[4.227091] (-) TimerEvent: {}
+[4.327920] (-) TimerEvent: {}
+[4.428773] (-) TimerEvent: {}
+[4.529589] (-) TimerEvent: {}
+[4.630390] (-) TimerEvent: {}
+[4.731244] (-) TimerEvent: {}
+[4.832059] (-) TimerEvent: {}
+[4.932949] (-) TimerEvent: {}
+[5.034206] (-) TimerEvent: {}
+[5.135024] (-) TimerEvent: {}
+[5.235786] (-) TimerEvent: {}
+[5.336591] (-) TimerEvent: {}
+[5.437437] (-) TimerEvent: {}
+[5.538369] (-) TimerEvent: {}
+[5.639170] (-) TimerEvent: {}
+[5.739983] (-) TimerEvent: {}
+[5.840921] (-) TimerEvent: {}
+[5.941706] (-) TimerEvent: {}
+[6.042528] (-) TimerEvent: {}
+[6.143353] (-) TimerEvent: {}
+[6.244163] (-) TimerEvent: {}
+[6.345029] (-) TimerEvent: {}
+[6.445851] (-) TimerEvent: {}
+[6.546635] (-) TimerEvent: {}
+[6.647460] (-) TimerEvent: {}
+[6.748242] (-) TimerEvent: {}
+[6.849096] (-) TimerEvent: {}
+[6.949936] (-) TimerEvent: {}
+[7.050744] (-) TimerEvent: {}
+[7.151588] (-) TimerEvent: {}
+[7.252369] (-) TimerEvent: {}
+[7.353196] (-) TimerEvent: {}
+[7.454024] (-) TimerEvent: {}
+[7.554843] (-) TimerEvent: {}
+[7.655671] (-) TimerEvent: {}
+[7.756536] (-) TimerEvent: {}
+[7.857403] (-) TimerEvent: {}
+[7.958199] (-) TimerEvent: {}
+[8.059010] (-) TimerEvent: {}
+[8.159827] (-) TimerEvent: {}
+[8.260661] (-) TimerEvent: {}
+[8.361469] (-) TimerEvent: {}
+[8.462309] (-) TimerEvent: {}
+[8.563360] (-) TimerEvent: {}
+[8.664161] (-) TimerEvent: {}
+[8.765092] (-) TimerEvent: {}
+[8.866259] (-) TimerEvent: {}
+[8.967066] (-) TimerEvent: {}
+[9.067882] (-) TimerEvent: {}
+[9.168731] (-) TimerEvent: {}
+[9.269536] (-) TimerEvent: {}
+[9.370363] (-) TimerEvent: {}
+[9.471188] (-) TimerEvent: {}
+[9.571993] (-) TimerEvent: {}
+[9.672840] (-) TimerEvent: {}
+[9.773606] (-) TimerEvent: {}
+[9.874465] (-) TimerEvent: {}
+[9.975386] (-) TimerEvent: {}
+[10.076227] (-) TimerEvent: {}
+[10.177101] (-) TimerEvent: {}
+[10.277915] (-) TimerEvent: {}
+[10.378720] (-) TimerEvent: {}
+[10.479536] (-) TimerEvent: {}
+[10.580327] (-) TimerEvent: {}
+[10.681200] (-) TimerEvent: {}
+[10.782027] (-) TimerEvent: {}
+[10.882834] (-) TimerEvent: {}
+[10.983627] (-) TimerEvent: {}
+[11.084492] (-) TimerEvent: {}
+[11.185252] (-) TimerEvent: {}
+[11.286111] (-) TimerEvent: {}
+[11.386917] (-) TimerEvent: {}
+[11.487713] (-) TimerEvent: {}
+[11.588524] (-) TimerEvent: {}
+[11.689297] (-) TimerEvent: {}
+[11.790099] (-) TimerEvent: {}
+[11.890913] (-) TimerEvent: {}
+[11.991704] (-) TimerEvent: {}
+[12.092530] (-) TimerEvent: {}
+[12.193344] (-) TimerEvent: {}
+[12.294169] (-) TimerEvent: {}
+[12.395308] (-) TimerEvent: {}
+[12.496105] (-) TimerEvent: {}
+[12.596948] (-) TimerEvent: {}
+[12.697786] (-) TimerEvent: {}
+[12.798590] (-) TimerEvent: {}
+[12.899409] (-) TimerEvent: {}
+[13.000227] (-) TimerEvent: {}
+[13.101201] (-) TimerEvent: {}
+[13.202082] (-) TimerEvent: {}
+[13.302907] (-) TimerEvent: {}
+[13.403835] (-) TimerEvent: {}
+[13.504700] (-) TimerEvent: {}
+[13.605542] (-) TimerEvent: {}
+[13.706321] (-) TimerEvent: {}
+[13.807191] (-) TimerEvent: {}
+[13.908050] (-) TimerEvent: {}
+[14.008887] (-) TimerEvent: {}
+[14.109698] (-) TimerEvent: {}
+[14.210445] (-) TimerEvent: {}
+[14.311228] (-) TimerEvent: {}
+[14.412045] (-) TimerEvent: {}
+[14.512884] (-) TimerEvent: {}
+[14.613696] (-) TimerEvent: {}
+[14.714544] (-) TimerEvent: {}
+[14.815396] (-) TimerEvent: {}
+[14.916234] (-) TimerEvent: {}
+[15.017053] (-) TimerEvent: {}
+[15.117870] (-) TimerEvent: {}
+[15.218819] (-) TimerEvent: {}
+[15.319615] (-) TimerEvent: {}
+[15.420479] (-) TimerEvent: {}
+[15.521263] (-) TimerEvent: {}
+[15.622078] (-) TimerEvent: {}
+[15.722920] (-) TimerEvent: {}
+[15.823723] (-) TimerEvent: {}
+[15.924601] (-) TimerEvent: {}
+[16.025414] (-) TimerEvent: {}
+[16.126232] (-) TimerEvent: {}
+[16.227045] (-) TimerEvent: {}
+[16.327874] (-) TimerEvent: {}
+[16.428697] (-) TimerEvent: {}
+[16.529459] (-) TimerEvent: {}
+[16.630107] (-) TimerEvent: {}
+[16.730773] (-) TimerEvent: {}
+[16.831398] (-) TimerEvent: {}
+[16.932041] (-) TimerEvent: {}
+[17.032725] (-) TimerEvent: {}
+[17.133367] (-) TimerEvent: {}
+[17.234021] (-) TimerEvent: {}
+[17.334686] (-) TimerEvent: {}
+[17.435315] (-) TimerEvent: {}
+[17.535979] (-) TimerEvent: {}
+[17.636657] (-) TimerEvent: {}
+[17.737311] (-) TimerEvent: {}
+[17.837947] (-) TimerEvent: {}
+[17.938617] (-) TimerEvent: {}
+[18.039245] (-) TimerEvent: {}
+[18.139911] (-) TimerEvent: {}
+[18.240597] (-) TimerEvent: {}
+[18.341232] (-) TimerEvent: {}
+[18.441862] (-) TimerEvent: {}
+[18.542551] (-) TimerEvent: {}
+[18.643207] (-) TimerEvent: {}
+[18.743879] (-) TimerEvent: {}
+[18.844629] (-) TimerEvent: {}
+[18.945262] (-) TimerEvent: {}
+[19.045902] (-) TimerEvent: {}
+[19.146600] (-) TimerEvent: {}
+[19.247406] (-) TimerEvent: {}
+[19.348166] (-) TimerEvent: {}
+[19.449132] (-) TimerEvent: {}
+[19.549892] (-) TimerEvent: {}
+[19.650699] (-) TimerEvent: {}
+[19.751570] (-) TimerEvent: {}
+[19.852764] (-) TimerEvent: {}
+[19.953402] (-) TimerEvent: {}
+[20.054057] (-) TimerEvent: {}
+[20.154725] (-) TimerEvent: {}
+[20.255401] (-) TimerEvent: {}
+[20.356071] (-) TimerEvent: {}
+[20.456758] (-) TimerEvent: {}
+[20.462499] (local_zeroing_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable local_zeroing_node\x1b[0m\n'}
+[20.556964] (-) TimerEvent: {}
+[20.657649] (-) TimerEvent: {}
+[20.758366] (-) TimerEvent: {}
+[20.859117] (-) TimerEvent: {}
+[20.959796] (-) TimerEvent: {}
+[21.060486] (-) TimerEvent: {}
+[21.161151] (-) TimerEvent: {}
+[21.261822] (-) TimerEvent: {}
+[21.362480] (-) TimerEvent: {}
+[21.369615] (local_zeroing_pkg) StdoutLine: {'line': b'[100%] Built target local_zeroing_node\n'}
+[21.399219] (local_zeroing_pkg) CommandEnded: {'returncode': 0}
+[21.404436] (local_zeroing_pkg) JobProgress: {'identifier': 'local_zeroing_pkg', 'progress': 'install'}
+[21.427567] (local_zeroing_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nits/ros2_ws/build/local_zeroing_pkg'], 'cwd': '/home/nits/ros2_ws/build/local_zeroing_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg/share:/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '8867'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/local_zeroing_pkg/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1886,unix/ubuntu:/tmp/.ICE-unix/1886'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/643cc622_09eb_45ec_9994_a5fb9ef966b9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/local_zeroing_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper')]), 'shell': False}
+[21.448753] (local_zeroing_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.449508] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node\n'}
+[21.459584] (local_zeroing_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node" to ""\n'}
+[21.460190] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/package_run_dependencies/local_zeroing_pkg\n'}
+[21.460695] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/parent_prefix_path/local_zeroing_pkg\n'}
+[21.460976] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.sh\n'}
+[21.461278] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.dsv\n'}
+[21.461588] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.sh\n'}
+[21.462048] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.dsv\n'}
+[21.462352] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.bash\n'}
+[21.462585] (-) TimerEvent: {}
+[21.463048] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.sh\n'}
+[21.463415] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.zsh\n'}
+[21.463737] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.dsv\n'}
+[21.463976] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.dsv\n'}
+[21.464202] (local_zeroing_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/packages/local_zeroing_pkg\n'}
+[21.464505] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig.cmake\n'}
+[21.464744] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig-version.cmake\n'}
+[21.464972] (local_zeroing_pkg) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.xml\n'}
+[21.468639] (local_zeroing_pkg) CommandEnded: {'returncode': 0}
+[21.527593] (local_zeroing_pkg) JobEnded: {'identifier': 'local_zeroing_pkg', 'rc': 0}
+[21.529913] (-) EventReactorShutdown: {}

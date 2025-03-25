@@ -1,0 +1,2 @@
+Invoking command in '/home/nits/ros2_ws/build/flat_area_detector': /usr/bin/cmake --build /home/nits/ros2_ws/build/flat_area_detector -- -j6 -l6
+Invoked command in '/home/nits/ros2_ws/build/flat_area_detector' returned '2': /usr/bin/cmake --build /home/nits/ros2_ws/build/flat_area_detector -- -j6 -l6

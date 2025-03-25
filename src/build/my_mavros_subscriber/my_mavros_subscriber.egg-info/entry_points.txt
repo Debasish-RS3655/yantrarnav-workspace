@@ -1,0 +1,2 @@
+[console_scripts]
+pose_subscriber = my_mavros_subscriber.pose_subscriber:main

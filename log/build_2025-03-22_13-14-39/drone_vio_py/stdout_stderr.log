@@ -1,0 +1,27 @@
+/home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/drone_vio_py/drone_vio_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/drone_vio_py/drone_vio_py.egg-info/dependency_links.txt
+writing entry points to ../../build/drone_vio_py/drone_vio_py.egg-info/entry_points.txt
+writing requirements to ../../build/drone_vio_py/drone_vio_py.egg-info/requires.txt
+writing top-level names to ../../build/drone_vio_py/drone_vio_py.egg-info/top_level.txt
+reading manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'
+running build
+running build_py
+copying drone_vio_py/set_home_position.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py
+copying drone_vio_py/__init__.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py
+running install
+running install_lib
+copying /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py/set_home_position.py -> /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py
+byte-compiling /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py/set_home_position.py to set_home_position.cpython-310.pyc
+running install_data
+copying resource/drone_vio_py -> /home/nits/ros2_ws/install/drone_vio_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/nits/ros2_ws/install/drone_vio_py/share/drone_vio_py
+running install_egg_info
+removing '/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/drone_vio_py/drone_vio_py.egg-info to /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing Set_Home_Position script to /home/nits/ros2_ws/install/drone_vio_py/lib/drone_vio_py
+writing list of installed files to '/home/nits/ros2_ws/build/drone_vio_py/install.log'

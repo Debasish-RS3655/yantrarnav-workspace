@@ -1,0 +1,8 @@
+[01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:[m[K In member function ‘[01m[Kvoid FlatAreaDetector::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:118:103:[m[K [01;31m[Kerror: [m[K‘[01m[KComputeEigenvalues[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KComputeEigenvectors[m[K’?
+  118 | ver<Eigen::Matrix3f> eigen_solver(covariance_matrix, Eigen::[01;31m[KComputeEigenvalues[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                             [32m[KComputeEigenvectors[m[K
+gmake[2]: *** [CMakeFiles/flat_area_detector.dir/build.make:76: CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/flat_area_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

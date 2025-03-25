@@ -1,0 +1,4 @@
+source;share/local_zeroing_pkg/local_setup.bash
+source;share/local_zeroing_pkg/local_setup.dsv
+source;share/local_zeroing_pkg/local_setup.sh
+source;share/local_zeroing_pkg/local_setup.zsh

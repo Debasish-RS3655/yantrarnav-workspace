@@ -1,0 +1,2 @@
+Invoking command in '/home/nits/ros2_ws/build/drone_vio_cpp': /usr/bin/cmake /home/nits/ros2_ws/src/drone_vio_cpp -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/drone_vio_cpp
+Invoked command in '/home/nits/ros2_ws/build/drone_vio_cpp' returned '1': /usr/bin/cmake /home/nits/ros2_ws/src/drone_vio_cpp -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/drone_vio_cpp

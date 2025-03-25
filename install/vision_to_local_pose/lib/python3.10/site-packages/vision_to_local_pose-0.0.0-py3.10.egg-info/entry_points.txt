@@ -1,0 +1,2 @@
+[console_scripts]
+vision_to_local_pose = vision_to_local_pose.vision_to_local_pose:main

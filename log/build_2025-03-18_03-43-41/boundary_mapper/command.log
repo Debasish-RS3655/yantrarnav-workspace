@@ -1,0 +1,4 @@
+Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper
+Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper

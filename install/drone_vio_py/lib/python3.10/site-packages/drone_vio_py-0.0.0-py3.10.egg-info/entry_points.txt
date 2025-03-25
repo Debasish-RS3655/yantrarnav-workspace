@@ -1,0 +1,2 @@
+[console_scripts]
+Set_Home_Position = drone_vio_py.set_home_position:main

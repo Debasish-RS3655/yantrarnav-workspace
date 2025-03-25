@@ -1,0 +1,22 @@
+[2.114s] Invoking command in '/home/nits/ros2_ws/src/vision_to_local_pose': PYTHONPATH=/home/nits/ros2_ws/build/vision_to_local_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_to_local_pose build --build-base /home/nits/ros2_ws/build/vision_to_local_pose/build install --record /home/nits/ros2_ws/build/vision_to_local_pose/install.log --single-version-externally-managed
+[2.733s] running egg_info
+[2.775s] writing ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/PKG-INFO
+[2.776s] writing dependency_links to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/dependency_links.txt
+[2.777s] writing entry points to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/entry_points.txt
+[2.777s] writing requirements to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/requires.txt
+[2.777s] writing top-level names to ../../build/vision_to_local_pose/vision_to_local_pose.egg-info/top_level.txt
+[2.870s] reading manifest file '../../build/vision_to_local_pose/vision_to_local_pose.egg-info/SOURCES.txt'
+[2.874s] writing manifest file '../../build/vision_to_local_pose/vision_to_local_pose.egg-info/SOURCES.txt'
+[2.874s] running build
+[2.874s] running build_py
+[2.874s] copying vision_to_local_pose/vision_to_local_pose.py -> /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose
+[2.875s] copying vision_to_local_pose/__init__.py -> /home/nits/ros2_ws/build/vision_to_local_pose/build/lib/vision_to_local_pose
+[2.876s] running install
+[2.887s] running install_lib
+[2.931s] running install_egg_info
+[2.979s] removing '/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose-0.0.0-py3.10.egg-info' (and everything under it)
+[2.979s] Copying ../../build/vision_to_local_pose/vision_to_local_pose.egg-info to /home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages/vision_to_local_pose-0.0.0-py3.10.egg-info
+[2.982s] running install_scripts
+[3.335s] Installing vision_to_local_pose script to /home/nits/ros2_ws/install/vision_to_local_pose/lib/vision_to_local_pose
+[3.336s] writing list of installed files to '/home/nits/ros2_ws/build/vision_to_local_pose/install.log'
+[3.445s] Invoked command in '/home/nits/ros2_ws/src/vision_to_local_pose' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/vision_to_local_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_to_local_pose build --build-base /home/nits/ros2_ws/build/vision_to_local_pose/build install --record /home/nits/ros2_ws/build/vision_to_local_pose/install.log --single-version-externally-managed

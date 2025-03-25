@@ -1,0 +1,4 @@
+Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg
+Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg

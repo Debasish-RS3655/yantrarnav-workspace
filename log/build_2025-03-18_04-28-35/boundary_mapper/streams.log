@@ -1,0 +1,26 @@
+[0.067s] Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target boundary_mapper_node[0m
+[0.298s] [ 50%] [32mBuilding CXX object CMakeFiles/boundary_mapper_node.dir/src/boundary_mapper_node.cpp.o[0m
+[32.202s] [100%] [32m[1mLinking CXX executable boundary_mapper_node[0m
+[35.468s] [100%] Built target boundary_mapper_node
+[35.502s] Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+[35.536s] Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper
+[35.567s] -- Install configuration: ""
+[35.567s] -- Installing: /home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node
+[35.581s] -- Set runtime path of "/home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node" to ""
+[35.582s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/package_run_dependencies/boundary_mapper
+[35.583s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/parent_prefix_path/boundary_mapper
+[35.584s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.sh
+[35.585s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.dsv
+[35.586s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.sh
+[35.587s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.dsv
+[35.589s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.bash
+[35.590s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.sh
+[35.590s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.zsh
+[35.591s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.dsv
+[35.591s] -- Installing: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.dsv
+[35.591s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/packages/boundary_mapper
+[35.591s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig.cmake
+[35.591s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig-version.cmake
+[35.592s] -- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.xml
+[35.592s] Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper

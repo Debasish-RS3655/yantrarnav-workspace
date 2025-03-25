@@ -1,0 +1,332 @@
+[0.000000] (-) TimerEvent: {}
+[0.001244] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.001582] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001965] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002110] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002224] (boundary_mapper) JobQueued: {'identifier': 'boundary_mapper', 'dependencies': OrderedDict()}
+[0.002336] (boundary_mapper) JobStarted: {'identifier': 'boundary_mapper'}
+[0.048466] (boundary_mapper) JobProgress: {'identifier': 'boundary_mapper', 'progress': 'cmake'}
+[0.050624] (boundary_mapper) JobProgress: {'identifier': 'boundary_mapper', 'progress': 'build'}
+[0.052457] (boundary_mapper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nits/ros2_ws/build/boundary_mapper', '--', '-j6', '-l6'], 'cwd': '/home/nits/ros2_ws/build/boundary_mapper', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/boundary_mapper/share:/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2371'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/boundary_mapper/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/boundary_mapper/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2342,unix/ubuntu:/tmp/.ICE-unix/2342'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a579e26e_04f6_43b1_a06e_6bd9ca938800'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/boundary_mapper:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/boundary_mapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/nits/ros2_ws/install/boundary_mapper:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector')]), 'shell': False}
+[0.099263] (-) TimerEvent: {}
+[0.174751] (boundary_mapper) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target boundary_mapper_node\x1b[0m\n'}
+[0.199471] (-) TimerEvent: {}
+[0.257955] (boundary_mapper) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/boundary_mapper_node.dir/src/boundary_mapper_node.cpp.o\x1b[0m\n'}
+[0.299667] (-) TimerEvent: {}
+[0.400465] (-) TimerEvent: {}
+[0.501502] (-) TimerEvent: {}
+[0.602198] (-) TimerEvent: {}
+[0.702876] (-) TimerEvent: {}
+[0.803551] (-) TimerEvent: {}
+[0.904232] (-) TimerEvent: {}
+[1.004928] (-) TimerEvent: {}
+[1.105608] (-) TimerEvent: {}
+[1.206297] (-) TimerEvent: {}
+[1.306991] (-) TimerEvent: {}
+[1.407692] (-) TimerEvent: {}
+[1.508403] (-) TimerEvent: {}
+[1.609105] (-) TimerEvent: {}
+[1.709774] (-) TimerEvent: {}
+[1.810452] (-) TimerEvent: {}
+[1.911134] (-) TimerEvent: {}
+[2.011830] (-) TimerEvent: {}
+[2.112528] (-) TimerEvent: {}
+[2.213273] (-) TimerEvent: {}
+[2.313964] (-) TimerEvent: {}
+[2.414659] (-) TimerEvent: {}
+[2.515359] (-) TimerEvent: {}
+[2.616040] (-) TimerEvent: {}
+[2.716730] (-) TimerEvent: {}
+[2.817503] (-) TimerEvent: {}
+[2.918244] (-) TimerEvent: {}
+[3.019039] (-) TimerEvent: {}
+[3.119751] (-) TimerEvent: {}
+[3.220496] (-) TimerEvent: {}
+[3.321221] (-) TimerEvent: {}
+[3.421989] (-) TimerEvent: {}
+[3.522841] (-) TimerEvent: {}
+[3.623561] (-) TimerEvent: {}
+[3.724268] (-) TimerEvent: {}
+[3.825038] (-) TimerEvent: {}
+[3.925744] (-) TimerEvent: {}
+[4.026446] (-) TimerEvent: {}
+[4.127141] (-) TimerEvent: {}
+[4.227873] (-) TimerEvent: {}
+[4.328636] (-) TimerEvent: {}
+[4.429364] (-) TimerEvent: {}
+[4.530077] (-) TimerEvent: {}
+[4.630823] (-) TimerEvent: {}
+[4.731575] (-) TimerEvent: {}
+[4.832313] (-) TimerEvent: {}
+[4.933098] (-) TimerEvent: {}
+[5.033789] (-) TimerEvent: {}
+[5.134533] (-) TimerEvent: {}
+[5.235257] (-) TimerEvent: {}
+[5.335922] (-) TimerEvent: {}
+[5.436626] (-) TimerEvent: {}
+[5.537331] (-) TimerEvent: {}
+[5.638190] (-) TimerEvent: {}
+[5.738875] (-) TimerEvent: {}
+[5.839571] (-) TimerEvent: {}
+[5.940254] (-) TimerEvent: {}
+[6.040991] (-) TimerEvent: {}
+[6.141724] (-) TimerEvent: {}
+[6.242813] (-) TimerEvent: {}
+[6.343785] (-) TimerEvent: {}
+[6.444593] (-) TimerEvent: {}
+[6.545482] (-) TimerEvent: {}
+[6.646362] (-) TimerEvent: {}
+[6.747185] (-) TimerEvent: {}
+[6.848236] (-) TimerEvent: {}
+[6.949165] (-) TimerEvent: {}
+[7.049909] (-) TimerEvent: {}
+[7.150765] (-) TimerEvent: {}
+[7.251646] (-) TimerEvent: {}
+[7.352532] (-) TimerEvent: {}
+[7.453392] (-) TimerEvent: {}
+[7.554438] (-) TimerEvent: {}
+[7.655299] (-) TimerEvent: {}
+[7.756099] (-) TimerEvent: {}
+[7.856846] (-) TimerEvent: {}
+[7.957625] (-) TimerEvent: {}
+[8.058406] (-) TimerEvent: {}
+[8.159146] (-) TimerEvent: {}
+[8.259908] (-) TimerEvent: {}
+[8.360668] (-) TimerEvent: {}
+[8.461363] (-) TimerEvent: {}
+[8.562058] (-) TimerEvent: {}
+[8.662738] (-) TimerEvent: {}
+[8.763412] (-) TimerEvent: {}
+[8.864121] (-) TimerEvent: {}
+[8.964878] (-) TimerEvent: {}
+[9.065569] (-) TimerEvent: {}
+[9.166276] (-) TimerEvent: {}
+[9.266986] (-) TimerEvent: {}
+[9.367704] (-) TimerEvent: {}
+[9.468452] (-) TimerEvent: {}
+[9.569155] (-) TimerEvent: {}
+[9.669871] (-) TimerEvent: {}
+[9.770545] (-) TimerEvent: {}
+[9.871255] (-) TimerEvent: {}
+[9.971967] (-) TimerEvent: {}
+[10.072727] (-) TimerEvent: {}
+[10.173434] (-) TimerEvent: {}
+[10.274147] (-) TimerEvent: {}
+[10.374842] (-) TimerEvent: {}
+[10.475593] (-) TimerEvent: {}
+[10.576292] (-) TimerEvent: {}
+[10.677010] (-) TimerEvent: {}
+[10.777696] (-) TimerEvent: {}
+[10.878385] (-) TimerEvent: {}
+[10.979069] (-) TimerEvent: {}
+[11.079776] (-) TimerEvent: {}
+[11.180504] (-) TimerEvent: {}
+[11.281222] (-) TimerEvent: {}
+[11.381951] (-) TimerEvent: {}
+[11.482658] (-) TimerEvent: {}
+[11.583788] (-) TimerEvent: {}
+[11.684574] (-) TimerEvent: {}
+[11.785290] (-) TimerEvent: {}
+[11.886001] (-) TimerEvent: {}
+[11.986688] (-) TimerEvent: {}
+[12.087390] (-) TimerEvent: {}
+[12.188109] (-) TimerEvent: {}
+[12.288855] (-) TimerEvent: {}
+[12.389572] (-) TimerEvent: {}
+[12.490293] (-) TimerEvent: {}
+[12.591028] (-) TimerEvent: {}
+[12.691721] (-) TimerEvent: {}
+[12.792457] (-) TimerEvent: {}
+[12.893175] (-) TimerEvent: {}
+[12.994160] (-) TimerEvent: {}
+[13.095159] (-) TimerEvent: {}
+[13.195908] (-) TimerEvent: {}
+[13.296654] (-) TimerEvent: {}
+[13.397362] (-) TimerEvent: {}
+[13.498090] (-) TimerEvent: {}
+[13.598823] (-) TimerEvent: {}
+[13.699532] (-) TimerEvent: {}
+[13.800252] (-) TimerEvent: {}
+[13.900951] (-) TimerEvent: {}
+[14.001635] (-) TimerEvent: {}
+[14.102320] (-) TimerEvent: {}
+[14.203014] (-) TimerEvent: {}
+[14.303734] (-) TimerEvent: {}
+[14.404468] (-) TimerEvent: {}
+[14.505178] (-) TimerEvent: {}
+[14.605881] (-) TimerEvent: {}
+[14.706584] (-) TimerEvent: {}
+[14.807267] (-) TimerEvent: {}
+[14.907968] (-) TimerEvent: {}
+[15.008691] (-) TimerEvent: {}
+[15.109406] (-) TimerEvent: {}
+[15.210115] (-) TimerEvent: {}
+[15.310799] (-) TimerEvent: {}
+[15.411503] (-) TimerEvent: {}
+[15.512204] (-) TimerEvent: {}
+[15.612963] (-) TimerEvent: {}
+[15.713657] (-) TimerEvent: {}
+[15.814371] (-) TimerEvent: {}
+[15.915069] (-) TimerEvent: {}
+[16.015753] (-) TimerEvent: {}
+[16.116501] (-) TimerEvent: {}
+[16.217211] (-) TimerEvent: {}
+[16.317938] (-) TimerEvent: {}
+[16.418637] (-) TimerEvent: {}
+[16.519346] (-) TimerEvent: {}
+[16.620487] (-) TimerEvent: {}
+[16.721178] (-) TimerEvent: {}
+[16.821864] (-) TimerEvent: {}
+[16.922566] (-) TimerEvent: {}
+[17.023262] (-) TimerEvent: {}
+[17.123963] (-) TimerEvent: {}
+[17.224687] (-) TimerEvent: {}
+[17.325433] (-) TimerEvent: {}
+[17.426146] (-) TimerEvent: {}
+[17.526845] (-) TimerEvent: {}
+[17.627542] (-) TimerEvent: {}
+[17.728230] (-) TimerEvent: {}
+[17.829042] (-) TimerEvent: {}
+[17.929725] (-) TimerEvent: {}
+[18.030430] (-) TimerEvent: {}
+[18.131133] (-) TimerEvent: {}
+[18.231839] (-) TimerEvent: {}
+[18.332536] (-) TimerEvent: {}
+[18.433213] (-) TimerEvent: {}
+[18.533895] (-) TimerEvent: {}
+[18.634573] (-) TimerEvent: {}
+[18.735249] (-) TimerEvent: {}
+[18.835910] (-) TimerEvent: {}
+[18.936612] (-) TimerEvent: {}
+[19.037289] (-) TimerEvent: {}
+[19.138002] (-) TimerEvent: {}
+[19.238704] (-) TimerEvent: {}
+[19.339402] (-) TimerEvent: {}
+[19.440118] (-) TimerEvent: {}
+[19.540846] (-) TimerEvent: {}
+[19.641608] (-) TimerEvent: {}
+[19.742297] (-) TimerEvent: {}
+[19.842964] (-) TimerEvent: {}
+[19.943658] (-) TimerEvent: {}
+[20.044333] (-) TimerEvent: {}
+[20.145031] (-) TimerEvent: {}
+[20.245712] (-) TimerEvent: {}
+[20.346397] (-) TimerEvent: {}
+[20.447083] (-) TimerEvent: {}
+[20.547751] (-) TimerEvent: {}
+[20.648449] (-) TimerEvent: {}
+[20.749118] (-) TimerEvent: {}
+[20.849787] (-) TimerEvent: {}
+[20.950509] (-) TimerEvent: {}
+[21.051215] (-) TimerEvent: {}
+[21.151902] (-) TimerEvent: {}
+[21.252556] (-) TimerEvent: {}
+[21.353211] (-) TimerEvent: {}
+[21.453885] (-) TimerEvent: {}
+[21.554550] (-) TimerEvent: {}
+[21.655220] (-) TimerEvent: {}
+[21.755902] (-) TimerEvent: {}
+[21.856614] (-) TimerEvent: {}
+[21.957322] (-) TimerEvent: {}
+[22.058021] (-) TimerEvent: {}
+[22.158723] (-) TimerEvent: {}
+[22.259412] (-) TimerEvent: {}
+[22.360132] (-) TimerEvent: {}
+[22.460868] (-) TimerEvent: {}
+[22.561584] (-) TimerEvent: {}
+[22.662557] (-) TimerEvent: {}
+[22.763248] (-) TimerEvent: {}
+[22.863902] (-) TimerEvent: {}
+[22.964631] (-) TimerEvent: {}
+[23.065325] (-) TimerEvent: {}
+[23.165993] (-) TimerEvent: {}
+[23.266667] (-) TimerEvent: {}
+[23.367327] (-) TimerEvent: {}
+[23.467988] (-) TimerEvent: {}
+[23.568679] (-) TimerEvent: {}
+[23.669346] (-) TimerEvent: {}
+[23.770028] (-) TimerEvent: {}
+[23.870716] (-) TimerEvent: {}
+[23.971451] (-) TimerEvent: {}
+[24.072199] (-) TimerEvent: {}
+[24.172983] (-) TimerEvent: {}
+[24.273665] (-) TimerEvent: {}
+[24.374339] (-) TimerEvent: {}
+[24.475023] (-) TimerEvent: {}
+[24.575704] (-) TimerEvent: {}
+[24.676432] (-) TimerEvent: {}
+[24.777082] (-) TimerEvent: {}
+[24.877783] (-) TimerEvent: {}
+[24.978443] (-) TimerEvent: {}
+[25.079377] (-) TimerEvent: {}
+[25.180327] (-) TimerEvent: {}
+[25.281311] (-) TimerEvent: {}
+[25.382202] (-) TimerEvent: {}
+[25.483149] (-) TimerEvent: {}
+[25.583814] (-) TimerEvent: {}
+[25.684547] (-) TimerEvent: {}
+[25.785195] (-) TimerEvent: {}
+[25.885850] (-) TimerEvent: {}
+[25.986521] (-) TimerEvent: {}
+[26.087264] (-) TimerEvent: {}
+[26.188070] (-) TimerEvent: {}
+[26.288898] (-) TimerEvent: {}
+[26.389721] (-) TimerEvent: {}
+[26.490562] (-) TimerEvent: {}
+[26.591389] (-) TimerEvent: {}
+[26.692217] (-) TimerEvent: {}
+[26.793051] (-) TimerEvent: {}
+[26.893868] (-) TimerEvent: {}
+[26.994703] (-) TimerEvent: {}
+[27.095548] (-) TimerEvent: {}
+[27.196413] (-) TimerEvent: {}
+[27.297238] (-) TimerEvent: {}
+[27.398079] (-) TimerEvent: {}
+[27.498923] (-) TimerEvent: {}
+[27.599763] (-) TimerEvent: {}
+[27.675850] (boundary_mapper) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable boundary_mapper_node\x1b[0m\n'}
+[27.699867] (-) TimerEvent: {}
+[27.800601] (-) TimerEvent: {}
+[27.901491] (-) TimerEvent: {}
+[28.002380] (-) TimerEvent: {}
+[28.103428] (-) TimerEvent: {}
+[28.204742] (-) TimerEvent: {}
+[28.305584] (-) TimerEvent: {}
+[28.406347] (-) TimerEvent: {}
+[28.507042] (-) TimerEvent: {}
+[28.608265] (-) TimerEvent: {}
+[28.709197] (-) TimerEvent: {}
+[28.810227] (-) TimerEvent: {}
+[28.911283] (-) TimerEvent: {}
+[29.012149] (-) TimerEvent: {}
+[29.113249] (-) TimerEvent: {}
+[29.214648] (-) TimerEvent: {}
+[29.315540] (-) TimerEvent: {}
+[29.416431] (-) TimerEvent: {}
+[29.517225] (-) TimerEvent: {}
+[29.554798] (boundary_mapper) StdoutLine: {'line': b'[100%] Built target boundary_mapper_node\n'}
+[29.586160] (boundary_mapper) CommandEnded: {'returncode': 0}
+[29.588453] (boundary_mapper) JobProgress: {'identifier': 'boundary_mapper', 'progress': 'install'}
+[29.611504] (boundary_mapper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nits/ros2_ws/build/boundary_mapper'], 'cwd': '/home/nits/ros2_ws/build/boundary_mapper', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/boundary_mapper/share:/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2371'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/boundary_mapper/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/boundary_mapper/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2342,unix/ubuntu:/tmp/.ICE-unix/2342'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a579e26e_04f6_43b1_a06e_6bd9ca938800'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/boundary_mapper:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/boundary_mapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/nits/ros2_ws/install/boundary_mapper:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector')]), 'shell': False}
+[29.617314] (-) TimerEvent: {}
+[29.632778] (boundary_mapper) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.633347] (boundary_mapper) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node\n'}
+[29.644131] (boundary_mapper) StdoutLine: {'line': b'-- Set runtime path of "/home/nits/ros2_ws/install/boundary_mapper/lib/boundary_mapper/boundary_mapper_node" to ""\n'}
+[29.644842] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/package_run_dependencies/boundary_mapper\n'}
+[29.645096] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/parent_prefix_path/boundary_mapper\n'}
+[29.645264] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.sh\n'}
+[29.645424] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/ament_prefix_path.dsv\n'}
+[29.645754] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.sh\n'}
+[29.645975] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/environment/path.dsv\n'}
+[29.646364] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.bash\n'}
+[29.646521] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.sh\n'}
+[29.646667] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.zsh\n'}
+[29.646811] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/local_setup.dsv\n'}
+[29.646946] (boundary_mapper) StdoutLine: {'line': b'-- Installing: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.dsv\n'}
+[29.647083] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/ament_index/resource_index/packages/boundary_mapper\n'}
+[29.647221] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig.cmake\n'}
+[29.647356] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/cmake/boundary_mapperConfig-version.cmake\n'}
+[29.647494] (boundary_mapper) StdoutLine: {'line': b'-- Up-to-date: /home/nits/ros2_ws/install/boundary_mapper/share/boundary_mapper/package.xml\n'}
+[29.650507] (boundary_mapper) CommandEnded: {'returncode': 0}
+[29.708604] (boundary_mapper) JobEnded: {'identifier': 'boundary_mapper', 'rc': 0}
+[29.710606] (-) EventReactorShutdown: {}

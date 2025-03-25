@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000811] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001419] (-) JobUnselected: {'identifier': 'drone_takeoff'}
+[0.001488] (-) JobUnselected: {'identifier': 'drone_vio_cpp'}
+[0.001851] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.002326] (-) JobUnselected: {'identifier': 'local_zeroing_pkg'}
+[0.002430] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.002503] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002572] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002646] (drone_vio_py) JobQueued: {'identifier': 'drone_vio_py', 'dependencies': OrderedDict()}
+[0.002730] (drone_vio_py) JobStarted: {'identifier': 'drone_vio_py'}
+[0.099079] (-) TimerEvent: {}
+[0.199661] (-) TimerEvent: {}
+[0.300260] (-) TimerEvent: {}
+[0.400842] (-) TimerEvent: {}
+[0.501494] (-) TimerEvent: {}
+[0.602104] (-) TimerEvent: {}
+[0.702739] (-) TimerEvent: {}
+[0.803640] (-) TimerEvent: {}
+[0.904582] (-) TimerEvent: {}
+[1.005531] (-) TimerEvent: {}
+[1.106173] (-) TimerEvent: {}
+[1.206801] (-) TimerEvent: {}
+[1.307425] (-) TimerEvent: {}
+[1.408336] (-) TimerEvent: {}
+[1.509002] (-) TimerEvent: {}
+[1.609788] (-) TimerEvent: {}
+[1.710851] (-) TimerEvent: {}
+[1.811761] (-) TimerEvent: {}
+[1.912718] (-) TimerEvent: {}
+[2.013983] (-) TimerEvent: {}
+[2.114734] (-) TimerEvent: {}
+[2.137066] (drone_vio_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/drone_vio_py', 'build', '--build-base', '/home/nits/ros2_ws/build/drone_vio_py/build', 'install', '--record', '/home/nits/ros2_ws/build/drone_vio_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nits/ros2_ws/src/drone_vio_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nits', 'ROS_PACKAGE_PATH': '/home/nits/ros2_ws/install/flat_area_detector/share', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/nits', 'OLDPWD': '/home/nits', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2045', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nits/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'nits', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nits', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2005,unix/ubuntu:/tmp/.ICE-unix/2005', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5702b673_4332_4ab9_9b3d_6d25ac8f81d7', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nits/ros2_ws/build/drone_vio_py', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nits/ros2_ws/build/drone_vio_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper'}, 'shell': False}
+[2.214975] (-) TimerEvent: {}
+[2.315587] (-) TimerEvent: {}
+[2.416197] (-) TimerEvent: {}
+[2.516785] (-) TimerEvent: {}
+[2.617449] (-) TimerEvent: {}
+[2.718561] (-) TimerEvent: {}
+[2.785211] (drone_vio_py) StdoutLine: {'line': b'running egg_info\n'}
+[2.818757] (-) TimerEvent: {}
+[2.828262] (drone_vio_py) StdoutLine: {'line': b'writing ../../build/drone_vio_py/drone_vio_py.egg-info/PKG-INFO\n'}
+[2.829458] (drone_vio_py) StdoutLine: {'line': b'writing dependency_links to ../../build/drone_vio_py/drone_vio_py.egg-info/dependency_links.txt\n'}
+[2.829962] (drone_vio_py) StdoutLine: {'line': b'writing entry points to ../../build/drone_vio_py/drone_vio_py.egg-info/entry_points.txt\n'}
+[2.830623] (drone_vio_py) StdoutLine: {'line': b'writing requirements to ../../build/drone_vio_py/drone_vio_py.egg-info/requires.txt\n'}
+[2.830912] (drone_vio_py) StdoutLine: {'line': b'writing top-level names to ../../build/drone_vio_py/drone_vio_py.egg-info/top_level.txt\n'}
+[2.916737] (drone_vio_py) StdoutLine: {'line': b"reading manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'\n"}
+[2.918887] (-) TimerEvent: {}
+[2.920351] (drone_vio_py) StdoutLine: {'line': b"writing manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'\n"}
+[2.921103] (drone_vio_py) StdoutLine: {'line': b'running build\n'}
+[2.921310] (drone_vio_py) StdoutLine: {'line': b'running build_py\n'}
+[2.921766] (drone_vio_py) StdoutLine: {'line': b'copying drone_vio_py/set_home_position.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py\n'}
+[2.922739] (drone_vio_py) StdoutLine: {'line': b'copying drone_vio_py/__init__.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py\n'}
+[2.923958] (drone_vio_py) StdoutLine: {'line': b'running install\n'}
+[2.934768] (drone_vio_py) StdoutLine: {'line': b'running install_lib\n'}
+[2.978981] (drone_vio_py) StdoutLine: {'line': b'copying /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py/set_home_position.py -> /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py\n'}
+[2.980852] (drone_vio_py) StdoutLine: {'line': b'byte-compiling /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py/set_home_position.py to set_home_position.cpython-310.pyc\n'}
+[2.982902] (drone_vio_py) StdoutLine: {'line': b'running install_data\n'}
+[2.983836] (drone_vio_py) StdoutLine: {'line': b'copying resource/drone_vio_py -> /home/nits/ros2_ws/install/drone_vio_py/share/ament_index/resource_index/packages\n'}
+[2.984525] (drone_vio_py) StdoutLine: {'line': b'copying package.xml -> /home/nits/ros2_ws/install/drone_vio_py/share/drone_vio_py\n'}
+[2.985671] (drone_vio_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.019029] (-) TimerEvent: {}
+[3.028554] (drone_vio_py) StdoutLine: {'line': b"removing '/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.029439] (drone_vio_py) StdoutLine: {'line': b'Copying ../../build/drone_vio_py/drone_vio_py.egg-info to /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info\n'}
+[3.031697] (drone_vio_py) StdoutLine: {'line': b'running install_scripts\n'}
+[3.119179] (-) TimerEvent: {}
+[3.219820] (-) TimerEvent: {}
+[3.320470] (-) TimerEvent: {}
+[3.391335] (drone_vio_py) StdoutLine: {'line': b'Installing Set_Home_Position script to /home/nits/ros2_ws/install/drone_vio_py/lib/drone_vio_py\n'}
+[3.392531] (drone_vio_py) StdoutLine: {'line': b"writing list of installed files to '/home/nits/ros2_ws/build/drone_vio_py/install.log'\n"}
+[3.420726] (-) TimerEvent: {}
+[3.500820] (drone_vio_py) CommandEnded: {'returncode': 0}
+[3.521066] (-) TimerEvent: {}
+[3.533134] (drone_vio_py) JobEnded: {'identifier': 'drone_vio_py', 'rc': 0}
+[3.534961] (-) EventReactorShutdown: {}

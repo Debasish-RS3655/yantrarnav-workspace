@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target local_zeroing_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable local_zeroing_node[0m
+[100%] Built target local_zeroing_node
+-- Install configuration: ""
+-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node
+-- Set runtime path of "/home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node" to ""
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/package_run_dependencies/local_zeroing_pkg
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/parent_prefix_path/local_zeroing_pkg
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.sh
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.bash
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.sh
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.zsh
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.dsv
+-- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.dsv
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/packages/local_zeroing_pkg
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig.cmake
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig-version.cmake
+-- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.xml

@@ -1,0 +1,67 @@
+[0.051s] Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': /usr/bin/cmake /home/nits/ros2_ws/src/local_zeroing_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/local_zeroing_pkg
+[0.265s] -- The C compiler identification is GNU 11.4.0
+[0.434s] -- The CXX compiler identification is GNU 11.4.0
+[0.463s] -- Detecting C compiler ABI info
+[0.626s] -- Detecting C compiler ABI info - done
+[0.646s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.647s] -- Detecting C compile features
+[0.649s] -- Detecting C compile features - done
+[0.659s] -- Detecting CXX compiler ABI info
+[0.829s] -- Detecting CXX compiler ABI info - done
+[0.851s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.851s] -- Detecting CXX compile features
+[0.852s] -- Detecting CXX compile features - done
+[0.895s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.806s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.237s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.434s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.463s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.505s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.556s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.813s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.830s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.067s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.134s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.216s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.256s] -- Looking for pthread.h
+[3.407s] -- Looking for pthread.h - found
+[3.408s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.573s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.577s] -- Found Threads: TRUE  
+[3.791s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.032s] -- Configuring done
+[4.071s] -- Generating done
+[4.074s] [33mCMake Warning:
+[4.074s]   Manually-specified variables were not used by the project:
+[4.075s] 
+[4.075s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[4.075s] 
+[4.075s] [0m
+[4.083s] -- Build files have been written to: /home/nits/ros2_ws/build/local_zeroing_pkg
+[4.112s] Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': /usr/bin/cmake /home/nits/ros2_ws/src/local_zeroing_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/local_zeroing_pkg
+[4.118s] Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+[4.236s] [ 50%] [32mBuilding CXX object CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o[0m
+[22.883s] [100%] [32m[1mLinking CXX executable local_zeroing_node[0m
+[23.805s] [100%] Built target local_zeroing_node
+[23.834s] Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+[23.860s] Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg
+[23.879s] -- Install configuration: ""
+[23.880s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node
+[23.890s] -- Set runtime path of "/home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node" to ""
+[23.891s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/package_run_dependencies/local_zeroing_pkg
+[23.891s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/parent_prefix_path/local_zeroing_pkg
+[23.892s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.sh
+[23.892s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.dsv
+[23.893s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.sh
+[23.893s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.dsv
+[23.893s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.bash
+[23.894s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.sh
+[23.894s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.zsh
+[23.894s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.dsv
+[23.895s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.dsv
+[23.895s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/packages/local_zeroing_pkg
+[23.896s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig.cmake
+[23.896s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig-version.cmake
+[23.897s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.xml
+[23.902s] Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg

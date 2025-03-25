@@ -1,0 +1,25 @@
+[2.154s] Invoking command in '/home/nits/ros2_ws/src/drone_vio_py': PYTHONPATH=/home/nits/ros2_ws/build/drone_vio_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_vio_py build --build-base /home/nits/ros2_ws/build/drone_vio_py/build install --record /home/nits/ros2_ws/build/drone_vio_py/install.log --single-version-externally-managed install_data
+[3.113s] running egg_info
+[3.158s] writing ../../build/drone_vio_py/drone_vio_py.egg-info/PKG-INFO
+[3.162s] writing dependency_links to ../../build/drone_vio_py/drone_vio_py.egg-info/dependency_links.txt
+[3.163s] writing entry points to ../../build/drone_vio_py/drone_vio_py.egg-info/entry_points.txt
+[3.163s] writing requirements to ../../build/drone_vio_py/drone_vio_py.egg-info/requires.txt
+[3.163s] writing top-level names to ../../build/drone_vio_py/drone_vio_py.egg-info/top_level.txt
+[3.259s] reading manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'
+[3.262s] writing manifest file '../../build/drone_vio_py/drone_vio_py.egg-info/SOURCES.txt'
+[3.262s] running build
+[3.263s] running build_py
+[3.263s] copying drone_vio_py/set_home_position.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py
+[3.263s] copying drone_vio_py/__init__.py -> /home/nits/ros2_ws/build/drone_vio_py/build/lib/drone_vio_py
+[3.264s] running install
+[3.274s] running install_lib
+[3.323s] running install_data
+[3.324s] copying resource/drone_vio_py -> /home/nits/ros2_ws/install/drone_vio_py/share/ament_index/resource_index/packages
+[3.325s] copying package.xml -> /home/nits/ros2_ws/install/drone_vio_py/share/drone_vio_py
+[3.325s] running install_egg_info
+[3.373s] removing '/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info' (and everything under it)
+[3.374s] Copying ../../build/drone_vio_py/drone_vio_py.egg-info to /home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages/drone_vio_py-0.0.0-py3.10.egg-info
+[3.377s] running install_scripts
+[3.746s] Installing Set_Home_Position script to /home/nits/ros2_ws/install/drone_vio_py/lib/drone_vio_py
+[3.748s] writing list of installed files to '/home/nits/ros2_ws/build/drone_vio_py/install.log'
+[3.877s] Invoked command in '/home/nits/ros2_ws/src/drone_vio_py' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/drone_vio_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/drone_vio_py build --build-base /home/nits/ros2_ws/build/drone_vio_py/build install --record /home/nits/ros2_ws/build/drone_vio_py/install.log --single-version-externally-managed install_data

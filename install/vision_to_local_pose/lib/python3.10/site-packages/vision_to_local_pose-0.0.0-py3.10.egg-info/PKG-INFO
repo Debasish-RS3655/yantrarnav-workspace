@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: vision_to_local_pose
+Version: 0.0.0
+Summary: Node to transform vision pose to local position using home position as origin
+Maintainer: user
+Maintainer-email: duttaamandip1194@gmail.com
+License: Apache License 2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

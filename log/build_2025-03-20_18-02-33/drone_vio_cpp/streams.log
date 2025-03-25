@@ -1,0 +1,31 @@
+[0.046s] Invoking command in '/home/nits/ros2_ws/build/drone_vio_cpp': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake /home/nits/ros2_ws/src/drone_vio_cpp -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/drone_vio_cpp
+[0.073s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.360s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.440s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.445s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.456s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.474s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.497s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.560s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.564s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.765s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.859s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.057s] -- Configuring done
+[1.092s] -- Generating done
+[1.103s] -- Build files have been written to: /home/nits/ros2_ws/build/drone_vio_cpp
+[1.127s] Invoked command in '/home/nits/ros2_ws/build/drone_vio_cpp' returned '0': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake /home/nits/ros2_ws/src/drone_vio_cpp -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/drone_vio_cpp
+[1.133s] Invoking command in '/home/nits/ros2_ws/build/drone_vio_cpp': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --build /home/nits/ros2_ws/build/drone_vio_cpp -- -j6 -l6
+[1.249s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o[0m
+[19.699s] [100%] [32m[1mLinking CXX executable odom_to_vision_pose[0m
+[20.556s] [100%] Built target odom_to_vision_pose
+[20.584s] Invoked command in '/home/nits/ros2_ws/build/drone_vio_cpp' returned '0': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --build /home/nits/ros2_ws/build/drone_vio_cpp -- -j6 -l6
+[20.610s] Invoking command in '/home/nits/ros2_ws/build/drone_vio_cpp': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --install /home/nits/ros2_ws/build/drone_vio_cpp
+[20.627s] -- Install configuration: ""
+[20.628s] -- Installing: /home/nits/ros2_ws/install/drone_vio_cpp/lib/drone_vio_cpp/odom_to_vision_pose
+[20.637s] -- Set runtime path of "/home/nits/ros2_ws/install/drone_vio_cpp/lib/drone_vio_cpp/odom_to_vision_pose" to ""
+[20.637s] [31mCMake Error at cmake_install.cmake:66 (file):
+[20.638s]   file INSTALL cannot find "/home/nits/ros2_ws/src/drone_vio_cpp/launch": No
+[20.638s]   such file or directory.
+[20.638s] 
+[20.638s] [0m
+[20.641s] Invoked command in '/home/nits/ros2_ws/build/drone_vio_cpp' returned '1': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/drone_takeoff:/opt/ros/humble:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/boundary_mapper /usr/bin/cmake --install /home/nits/ros2_ws/build/drone_vio_cpp

@@ -1,0 +1,11 @@
+[0.048s] Invoking command in '/home/nits/ros2_ws/build/landing_area_detector': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6
+[0.179s] [35m[1mConsolidate compiler generated dependencies of target flat_area_detector[0m
+[0.256s] [ 50%] [32mBuilding CXX object CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o[0m
+[13.704s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:[m[K In member function ‘[01m[Kvoid FlatAreaDetector::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[13.704s] [01m[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:141:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+[13.705s]   141 |         marker.pose.orientation.x = [01;31m[Kq[m[K.x();
+[13.705s]       |                                     [01;31m[K^[m[K
+[23.421s] gmake[2]: *** [CMakeFiles/flat_area_detector.dir/build.make:76: CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o] Error 1
+[23.423s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/flat_area_detector.dir/all] Error 2
+[23.424s] gmake: *** [Makefile:146: all] Error 2
+[23.433s] Invoked command in '/home/nits/ros2_ws/build/landing_area_detector' returned '2': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6

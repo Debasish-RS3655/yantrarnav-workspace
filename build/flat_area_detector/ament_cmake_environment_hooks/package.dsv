@@ -1,0 +1,4 @@
+source;share/flat_area_detector/local_setup.bash
+source;share/flat_area_detector/local_setup.dsv
+source;share/flat_area_detector/local_setup.sh
+source;share/flat_area_detector/local_setup.zsh

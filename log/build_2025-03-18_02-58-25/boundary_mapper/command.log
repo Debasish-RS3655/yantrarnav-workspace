@@ -1,0 +1,6 @@
+Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': /usr/bin/cmake /home/nits/ros2_ws/src/boundary_mapper -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/boundary_mapper
+Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': /usr/bin/cmake /home/nits/ros2_ws/src/boundary_mapper -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nits/ros2_ws/install/boundary_mapper
+Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': /usr/bin/cmake --build /home/nits/ros2_ws/build/boundary_mapper -- -j6 -l6
+Invoking command in '/home/nits/ros2_ws/build/boundary_mapper': /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper
+Invoked command in '/home/nits/ros2_ws/build/boundary_mapper' returned '0': /usr/bin/cmake --install /home/nits/ros2_ws/build/boundary_mapper

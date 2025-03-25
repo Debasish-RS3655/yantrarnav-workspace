@@ -1,0 +1,4 @@
+source;share/landing_area_detector/local_setup.bash
+source;share/landing_area_detector/local_setup.dsv
+source;share/landing_area_detector/local_setup.sh
+source;share/landing_area_detector/local_setup.zsh

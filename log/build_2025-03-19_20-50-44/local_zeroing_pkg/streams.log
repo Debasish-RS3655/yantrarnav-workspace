@@ -1,0 +1,26 @@
+[0.052s] Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+[0.147s] [35m[1mConsolidate compiler generated dependencies of target local_zeroing_node[0m
+[0.189s] [ 50%] [32mBuilding CXX object CMakeFiles/local_zeroing_node.dir/src/local_zeroing_node.cpp.o[0m
+[18.902s] [100%] [32m[1mLinking CXX executable local_zeroing_node[0m
+[19.868s] [100%] Built target local_zeroing_node
+[19.897s] Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nits/ros2_ws/build/local_zeroing_pkg -- -j6 -l6
+[19.923s] Invoking command in '/home/nits/ros2_ws/build/local_zeroing_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg
+[19.941s] -- Install configuration: ""
+[19.941s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node
+[19.952s] -- Set runtime path of "/home/nits/ros2_ws/install/local_zeroing_pkg/lib/local_zeroing_pkg/local_zeroing_node" to ""
+[19.952s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/package_run_dependencies/local_zeroing_pkg
+[19.953s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/parent_prefix_path/local_zeroing_pkg
+[19.953s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.sh
+[19.954s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/ament_prefix_path.dsv
+[19.954s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.sh
+[19.954s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/environment/path.dsv
+[19.954s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.bash
+[19.954s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.sh
+[19.955s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.zsh
+[19.955s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/local_setup.dsv
+[19.955s] -- Installing: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.dsv
+[19.955s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/ament_index/resource_index/packages/local_zeroing_pkg
+[19.956s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig.cmake
+[19.956s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/cmake/local_zeroing_pkgConfig-version.cmake
+[19.956s] -- Up-to-date: /home/nits/ros2_ws/install/local_zeroing_pkg/share/local_zeroing_pkg/package.xml
+[19.960s] Invoked command in '/home/nits/ros2_ws/build/local_zeroing_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nits/ros2_ws/build/local_zeroing_pkg

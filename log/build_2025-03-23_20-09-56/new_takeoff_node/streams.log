@@ -1,0 +1,33 @@
+[2.092s] Invoking command in '/home/nits/ros2_ws/build/new_takeoff_node': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/nits/ros2_ws/build/new_takeoff_node/build
+[2.889s] running develop
+[3.465s] Removing /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new-takeoff-node.egg-link (link to .)
+[3.596s] Invoked command in '/home/nits/ros2_ws/build/new_takeoff_node' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/nits/ros2_ws/build/new_takeoff_node/build
+[3.601s] Invoking command in '/home/nits/ros2_ws/src/new_takeoff_node': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/new_takeoff_node build --build-base /home/nits/ros2_ws/build/new_takeoff_node/build install --record /home/nits/ros2_ws/build/new_takeoff_node/install.log --single-version-externally-managed install_data --force
+[4.273s] running egg_info
+[4.317s] writing ../../build/new_takeoff_node/new_takeoff_node.egg-info/PKG-INFO
+[4.318s] writing dependency_links to ../../build/new_takeoff_node/new_takeoff_node.egg-info/dependency_links.txt
+[4.318s] writing entry points to ../../build/new_takeoff_node/new_takeoff_node.egg-info/entry_points.txt
+[4.319s] writing requirements to ../../build/new_takeoff_node/new_takeoff_node.egg-info/requires.txt
+[4.319s] writing top-level names to ../../build/new_takeoff_node/new_takeoff_node.egg-info/top_level.txt
+[4.408s] reading manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'
+[4.411s] writing manifest file '../../build/new_takeoff_node/new_takeoff_node.egg-info/SOURCES.txt'
+[4.412s] running build
+[4.412s] running build_py
+[4.412s] copying new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node
+[4.413s] copying new_takeoff_node/__init__.py -> /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node
+[4.415s] running install
+[4.426s] running install_lib
+[4.471s] creating /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+[4.471s] copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/takeoff_node.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+[4.472s] copying /home/nits/ros2_ws/build/new_takeoff_node/build/lib/new_takeoff_node/__init__.py -> /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node
+[4.474s] byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/takeoff_node.py to takeoff_node.cpython-310.pyc
+[4.479s] byte-compiling /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node/__init__.py to __init__.cpython-310.pyc
+[4.479s] running install_data
+[4.481s] copying resource/new_takeoff_node -> /home/nits/ros2_ws/install/new_takeoff_node/share/ament_index/resource_index/packages
+[4.481s] copying package.xml -> /home/nits/ros2_ws/install/new_takeoff_node/share/new_takeoff_node
+[4.481s] running install_egg_info
+[4.527s] Copying ../../build/new_takeoff_node/new_takeoff_node.egg-info to /home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages/new_takeoff_node-0.0.0-py3.10.egg-info
+[4.529s] running install_scripts
+[4.886s] Installing takeoff_node script to /home/nits/ros2_ws/install/new_takeoff_node/lib/new_takeoff_node
+[4.890s] writing list of installed files to '/home/nits/ros2_ws/build/new_takeoff_node/install.log'
+[4.994s] Invoked command in '/home/nits/ros2_ws/src/new_takeoff_node' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/new_takeoff_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/new_takeoff_node build --build-base /home/nits/ros2_ws/build/new_takeoff_node/build install --record /home/nits/ros2_ws/build/new_takeoff_node/install.log --single-version-externally-managed install_data --force

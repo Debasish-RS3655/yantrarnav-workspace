@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/nits/ros2_ws/build/landing_area_detector': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target flat_area_detector[0m
+[0.213s] [ 50%] [32mBuilding CXX object CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o[0m
+[32.415s] [100%] [32m[1mLinking CXX executable flat_area_detector[0m
+[38.593s] [100%] Built target flat_area_detector
+[38.621s] Invoked command in '/home/nits/ros2_ws/build/landing_area_detector' returned '0': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --build /home/nits/ros2_ws/build/landing_area_detector -- -j6 -l6
+[38.649s] Invoking command in '/home/nits/ros2_ws/build/landing_area_detector': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --install /home/nits/ros2_ws/build/landing_area_detector
+[38.667s] -- Install configuration: ""
+[38.667s] -- Installing: /home/nits/ros2_ws/install/landing_area_detector/lib/landing_area_detector/flat_area_detector
+[38.680s] -- Set runtime path of "/home/nits/ros2_ws/install/landing_area_detector/lib/landing_area_detector/flat_area_detector" to ""
+[38.681s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/ament_index/resource_index/package_run_dependencies/landing_area_detector
+[38.681s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/ament_index/resource_index/parent_prefix_path/landing_area_detector
+[38.681s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/environment/ament_prefix_path.sh
+[38.681s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/environment/ament_prefix_path.dsv
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/environment/path.sh
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/environment/path.dsv
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/local_setup.bash
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/local_setup.sh
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/local_setup.zsh
+[38.682s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/local_setup.dsv
+[38.682s] -- Installing: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/package.dsv
+[38.683s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/ament_index/resource_index/packages/landing_area_detector
+[38.683s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/cmake/landing_area_detectorConfig.cmake
+[38.683s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/cmake/landing_area_detectorConfig-version.cmake
+[38.683s] -- Up-to-date: /home/nits/ros2_ws/install/landing_area_detector/share/landing_area_detector/package.xml
+[38.688s] Invoked command in '/home/nits/ros2_ws/build/landing_area_detector' returned '0': CMAKE_PREFIX_PATH=/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector /usr/bin/cmake --install /home/nits/ros2_ws/build/landing_area_detector

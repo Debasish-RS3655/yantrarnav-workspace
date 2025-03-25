@@ -1,0 +1,289 @@
+[0.000000] (-) TimerEvent: {}
+[0.001301] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.002130] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002658] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002755] (landing_area_detector) JobQueued: {'identifier': 'landing_area_detector', 'dependencies': OrderedDict()}
+[0.002819] (landing_area_detector) JobStarted: {'identifier': 'landing_area_detector'}
+[0.021386] (landing_area_detector) JobProgress: {'identifier': 'landing_area_detector', 'progress': 'cmake'}
+[0.023469] (landing_area_detector) JobProgress: {'identifier': 'landing_area_detector', 'progress': 'build'}
+[0.025167] (landing_area_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nits/ros2_ws/build/landing_area_detector', '--', '-j6', '-l6'], 'cwd': '/home/nits/ros2_ws/build/landing_area_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nits'), ('ROS_PACKAGE_PATH', '/home/nits/ros2_ws/install/flat_area_detector/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/usr/local/cuda-12.2/lib64:/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/nits'), ('OLDPWD', '/home/nits'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2337'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nits/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nits'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nits'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/usr/local/cuda-12.2/bin:/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin:/home/nits/.local/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2310,unix/ubuntu:/tmp/.ICE-unix/2310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b750aa6d_9af0_4b2c_bf06_a33a86a59b0d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nits/ros2_ws/build/landing_area_detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/landing_area_detector:/opt/ros/humble:/home/nits/ros2_ws/install/flat_area_detector')]), 'shell': False}
+[0.098924] (-) TimerEvent: {}
+[0.148530] (landing_area_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target flat_area_detector\x1b[0m\n'}
+[0.199119] (-) TimerEvent: {}
+[0.215155] (landing_area_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o\x1b[0m\n'}
+[0.299352] (-) TimerEvent: {}
+[0.400257] (-) TimerEvent: {}
+[0.501034] (-) TimerEvent: {}
+[0.601909] (-) TimerEvent: {}
+[0.703032] (-) TimerEvent: {}
+[0.803780] (-) TimerEvent: {}
+[0.904471] (-) TimerEvent: {}
+[1.005547] (-) TimerEvent: {}
+[1.106793] (-) TimerEvent: {}
+[1.207656] (-) TimerEvent: {}
+[1.308568] (-) TimerEvent: {}
+[1.409267] (-) TimerEvent: {}
+[1.510164] (-) TimerEvent: {}
+[1.611072] (-) TimerEvent: {}
+[1.711921] (-) TimerEvent: {}
+[1.812816] (-) TimerEvent: {}
+[1.913724] (-) TimerEvent: {}
+[2.014742] (-) TimerEvent: {}
+[2.115636] (-) TimerEvent: {}
+[2.216615] (-) TimerEvent: {}
+[2.317536] (-) TimerEvent: {}
+[2.418434] (-) TimerEvent: {}
+[2.519334] (-) TimerEvent: {}
+[2.620058] (-) TimerEvent: {}
+[2.720826] (-) TimerEvent: {}
+[2.821622] (-) TimerEvent: {}
+[2.922374] (-) TimerEvent: {}
+[3.023304] (-) TimerEvent: {}
+[3.124528] (-) TimerEvent: {}
+[3.225330] (-) TimerEvent: {}
+[3.326024] (-) TimerEvent: {}
+[3.426808] (-) TimerEvent: {}
+[3.527556] (-) TimerEvent: {}
+[3.628344] (-) TimerEvent: {}
+[3.729061] (-) TimerEvent: {}
+[3.829799] (-) TimerEvent: {}
+[3.930538] (-) TimerEvent: {}
+[4.032768] (-) TimerEvent: {}
+[4.133473] (-) TimerEvent: {}
+[4.234212] (-) TimerEvent: {}
+[4.335144] (-) TimerEvent: {}
+[4.435898] (-) TimerEvent: {}
+[4.536625] (-) TimerEvent: {}
+[4.637347] (-) TimerEvent: {}
+[4.738117] (-) TimerEvent: {}
+[4.839038] (-) TimerEvent: {}
+[4.939920] (-) TimerEvent: {}
+[5.040803] (-) TimerEvent: {}
+[5.141733] (-) TimerEvent: {}
+[5.242659] (-) TimerEvent: {}
+[5.343531] (-) TimerEvent: {}
+[5.444423] (-) TimerEvent: {}
+[5.545312] (-) TimerEvent: {}
+[5.646207] (-) TimerEvent: {}
+[5.747128] (-) TimerEvent: {}
+[5.848022] (-) TimerEvent: {}
+[5.948895] (-) TimerEvent: {}
+[6.049775] (-) TimerEvent: {}
+[6.150705] (-) TimerEvent: {}
+[6.251720] (-) TimerEvent: {}
+[6.352611] (-) TimerEvent: {}
+[6.453461] (-) TimerEvent: {}
+[6.554332] (-) TimerEvent: {}
+[6.655246] (-) TimerEvent: {}
+[6.756167] (-) TimerEvent: {}
+[6.857061] (-) TimerEvent: {}
+[6.957918] (-) TimerEvent: {}
+[7.058812] (-) TimerEvent: {}
+[7.159672] (-) TimerEvent: {}
+[7.260538] (-) TimerEvent: {}
+[7.361910] (-) TimerEvent: {}
+[7.462834] (-) TimerEvent: {}
+[7.563718] (-) TimerEvent: {}
+[7.664757] (-) TimerEvent: {}
+[7.765723] (-) TimerEvent: {}
+[7.866742] (-) TimerEvent: {}
+[7.967629] (-) TimerEvent: {}
+[8.068540] (-) TimerEvent: {}
+[8.169433] (-) TimerEvent: {}
+[8.270319] (-) TimerEvent: {}
+[8.371261] (-) TimerEvent: {}
+[8.472091] (-) TimerEvent: {}
+[8.572930] (-) TimerEvent: {}
+[8.673787] (-) TimerEvent: {}
+[8.774680] (-) TimerEvent: {}
+[8.875554] (-) TimerEvent: {}
+[8.976449] (-) TimerEvent: {}
+[9.077319] (-) TimerEvent: {}
+[9.178189] (-) TimerEvent: {}
+[9.279081] (-) TimerEvent: {}
+[9.379937] (-) TimerEvent: {}
+[9.480767] (-) TimerEvent: {}
+[9.581602] (-) TimerEvent: {}
+[9.682442] (-) TimerEvent: {}
+[9.783317] (-) TimerEvent: {}
+[9.884173] (-) TimerEvent: {}
+[9.985044] (-) TimerEvent: {}
+[10.085882] (-) TimerEvent: {}
+[10.186779] (-) TimerEvent: {}
+[10.287604] (-) TimerEvent: {}
+[10.388470] (-) TimerEvent: {}
+[10.489291] (-) TimerEvent: {}
+[10.590155] (-) TimerEvent: {}
+[10.691092] (-) TimerEvent: {}
+[10.791960] (-) TimerEvent: {}
+[10.892831] (-) TimerEvent: {}
+[10.993699] (-) TimerEvent: {}
+[11.094592] (-) TimerEvent: {}
+[11.195444] (-) TimerEvent: {}
+[11.296265] (-) TimerEvent: {}
+[11.397041] (-) TimerEvent: {}
+[11.497981] (-) TimerEvent: {}
+[11.598905] (-) TimerEvent: {}
+[11.699805] (-) TimerEvent: {}
+[11.800732] (-) TimerEvent: {}
+[11.901621] (-) TimerEvent: {}
+[12.002645] (-) TimerEvent: {}
+[12.103533] (-) TimerEvent: {}
+[12.204405] (-) TimerEvent: {}
+[12.305290] (-) TimerEvent: {}
+[12.406152] (-) TimerEvent: {}
+[12.507003] (-) TimerEvent: {}
+[12.607745] (-) TimerEvent: {}
+[12.708582] (-) TimerEvent: {}
+[12.809433] (-) TimerEvent: {}
+[12.910280] (-) TimerEvent: {}
+[13.011186] (-) TimerEvent: {}
+[13.112066] (-) TimerEvent: {}
+[13.212910] (-) TimerEvent: {}
+[13.313770] (-) TimerEvent: {}
+[13.414667] (-) TimerEvent: {}
+[13.515511] (-) TimerEvent: {}
+[13.573485] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid FlatAreaDetector::pointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.574636] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:143:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.575004] (landing_area_detector) StderrLine: {'line': b'  143 |         landing_cloud->points = \x1b[01;31m\x1b[Klanding_points_\x1b[m\x1b[K;\n'}
+[13.575334] (landing_area_detector) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.575630] (landing_area_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:72\x1b[m\x1b[K,\n'}
+[13.575965] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[13.576258] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[13.576540] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[13.576779] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[13.577018] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.577505] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.577739] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.577968] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:1\x1b[m\x1b[K:\n'}
+[13.578247] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.578499] (landing_area_detector) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kvector<_Tp, _Alloc>\x1b[m\x1b[K::\n'}
+[13.578781] (landing_area_detector) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.579006] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:199:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.579246] (landing_area_detector) StderrLine: {'line': b'  199 |     operator=(\x1b[01;36m\x1b[Kconst vector<_Tp, _Alloc>& __x\x1b[m\x1b[K)\n'}
+[13.579474] (landing_area_detector) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.579702] (landing_area_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[13.579925] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[13.580144] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[13.580363] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[13.580583] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[13.580808] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.581028] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.581305] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.581529] (landing_area_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nits/ros2_ws/src/landing_area_detector/src/flat_area_detector.cpp:1\x1b[m\x1b[K:\n'}
+[13.581752] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.582022] (landing_area_detector) StderrLine: {'line': b'  709 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[13.582262] (landing_area_detector) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.582489] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.582819] (landing_area_detector) StderrLine: {'line': b'  709 |       operator=(\x1b[01;36m\x1b[Kvector&& __x\x1b[m\x1b[K) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[13.583053] (landing_area_detector) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.583366] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.583642] (landing_area_detector) StderrLine: {'line': b'  730 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[13.583870] (landing_area_detector) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.584095] (landing_area_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.584327] (landing_area_detector) StderrLine: {'line': b'  730 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[13.584548] (landing_area_detector) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.615744] (-) TimerEvent: {}
+[13.716578] (-) TimerEvent: {}
+[13.817465] (-) TimerEvent: {}
+[13.918359] (-) TimerEvent: {}
+[14.019254] (-) TimerEvent: {}
+[14.120244] (-) TimerEvent: {}
+[14.221031] (-) TimerEvent: {}
+[14.321853] (-) TimerEvent: {}
+[14.422705] (-) TimerEvent: {}
+[14.523602] (-) TimerEvent: {}
+[14.624489] (-) TimerEvent: {}
+[14.725373] (-) TimerEvent: {}
+[14.826247] (-) TimerEvent: {}
+[14.927139] (-) TimerEvent: {}
+[15.028008] (-) TimerEvent: {}
+[15.128904] (-) TimerEvent: {}
+[15.229765] (-) TimerEvent: {}
+[15.330649] (-) TimerEvent: {}
+[15.432012] (-) TimerEvent: {}
+[15.533019] (-) TimerEvent: {}
+[15.634196] (-) TimerEvent: {}
+[15.735123] (-) TimerEvent: {}
+[15.836054] (-) TimerEvent: {}
+[15.936968] (-) TimerEvent: {}
+[16.037861] (-) TimerEvent: {}
+[16.138768] (-) TimerEvent: {}
+[16.239688] (-) TimerEvent: {}
+[16.340552] (-) TimerEvent: {}
+[16.441421] (-) TimerEvent: {}
+[16.542276] (-) TimerEvent: {}
+[16.643172] (-) TimerEvent: {}
+[16.744010] (-) TimerEvent: {}
+[16.844946] (-) TimerEvent: {}
+[16.946048] (-) TimerEvent: {}
+[17.047000] (-) TimerEvent: {}
+[17.147867] (-) TimerEvent: {}
+[17.248700] (-) TimerEvent: {}
+[17.349547] (-) TimerEvent: {}
+[17.450398] (-) TimerEvent: {}
+[17.551280] (-) TimerEvent: {}
+[17.652407] (-) TimerEvent: {}
+[17.753275] (-) TimerEvent: {}
+[17.854123] (-) TimerEvent: {}
+[17.955022] (-) TimerEvent: {}
+[18.055895] (-) TimerEvent: {}
+[18.156775] (-) TimerEvent: {}
+[18.257645] (-) TimerEvent: {}
+[18.358530] (-) TimerEvent: {}
+[18.459383] (-) TimerEvent: {}
+[18.560293] (-) TimerEvent: {}
+[18.661160] (-) TimerEvent: {}
+[18.762003] (-) TimerEvent: {}
+[18.862870] (-) TimerEvent: {}
+[18.963725] (-) TimerEvent: {}
+[19.064579] (-) TimerEvent: {}
+[19.165497] (-) TimerEvent: {}
+[19.266875] (-) TimerEvent: {}
+[19.367890] (-) TimerEvent: {}
+[19.468763] (-) TimerEvent: {}
+[19.569652] (-) TimerEvent: {}
+[19.670556] (-) TimerEvent: {}
+[19.771432] (-) TimerEvent: {}
+[19.872358] (-) TimerEvent: {}
+[19.973272] (-) TimerEvent: {}
+[20.074170] (-) TimerEvent: {}
+[20.175098] (-) TimerEvent: {}
+[20.276056] (-) TimerEvent: {}
+[20.376925] (-) TimerEvent: {}
+[20.477818] (-) TimerEvent: {}
+[20.578689] (-) TimerEvent: {}
+[20.679562] (-) TimerEvent: {}
+[20.780675] (-) TimerEvent: {}
+[20.881627] (-) TimerEvent: {}
+[20.982487] (-) TimerEvent: {}
+[21.083383] (-) TimerEvent: {}
+[21.184300] (-) TimerEvent: {}
+[21.285167] (-) TimerEvent: {}
+[21.386198] (-) TimerEvent: {}
+[21.487087] (-) TimerEvent: {}
+[21.587931] (-) TimerEvent: {}
+[21.688770] (-) TimerEvent: {}
+[21.789640] (-) TimerEvent: {}
+[21.890499] (-) TimerEvent: {}
+[21.991447] (-) TimerEvent: {}
+[22.092315] (-) TimerEvent: {}
+[22.193224] (-) TimerEvent: {}
+[22.294083] (-) TimerEvent: {}
+[22.394983] (-) TimerEvent: {}
+[22.495848] (-) TimerEvent: {}
+[22.596797] (-) TimerEvent: {}
+[22.697666] (-) TimerEvent: {}
+[22.798576] (-) TimerEvent: {}
+[22.899410] (-) TimerEvent: {}
+[23.000262] (-) TimerEvent: {}
+[23.101613] (-) TimerEvent: {}
+[23.202581] (-) TimerEvent: {}
+[23.303464] (-) TimerEvent: {}
+[23.340336] (landing_area_detector) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/flat_area_detector.dir/build.make:76: CMakeFiles/flat_area_detector.dir/src/flat_area_detector.cpp.o] Error 1\n'}
+[23.341180] (landing_area_detector) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/flat_area_detector.dir/all] Error 2\n'}
+[23.341816] (landing_area_detector) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[23.349024] (landing_area_detector) CommandEnded: {'returncode': 2}
+[23.403784] (-) TimerEvent: {}
+[23.418015] (landing_area_detector) JobEnded: {'identifier': 'landing_area_detector', 'rc': 2}
+[23.429272] (-) EventReactorShutdown: {}

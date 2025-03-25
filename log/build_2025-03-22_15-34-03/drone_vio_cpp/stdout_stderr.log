@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target odom_to_vision_pose[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o[0m
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In member function ‘[01m[Kvoid OdomToVisionPose::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetRPY[m[K’; did you mean ‘[01m[KsetRPY[m[K’?
+   69 |         q_ned.setRPY(q_enu.[01;31m[KgetRPY[m[K()[1], q_enu.getRPY()[0], q_enu.getRPY()[2]);
+      |                            [01;31m[K^~~~~~[m[K
+      |                            [32m[KsetRPY[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetRPY[m[K’; did you mean ‘[01m[KsetRPY[m[K’?
+   69 |         q_ned.setRPY(q_enu.getRPY()[1], q_enu.[01;31m[KgetRPY[m[K()[0], q_enu.getRPY()[2]);
+      |                                               [01;31m[K^~~~~~[m[K
+      |                                               [32m[KsetRPY[m[K
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:69:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Quaternion[m[K’ has no member named ‘[01m[KgetRPY[m[K’; did you mean ‘[01m[KsetRPY[m[K’?
+   69 |         q_ned.setRPY(q_enu.getRPY()[1], q_enu.getRPY()[0], q_enu.[01;31m[KgetRPY[m[K()[2]);
+      |                                                                  [01;31m[K^~~~~~[m[K
+      |                                                                  [32m[KsetRPY[m[K
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
