@@ -3,61 +3,53 @@
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
-from mavros_msgs.msg import AttitudeTarget, State, PositionTarget
+from mavros_msgs.msg import AttitudeTarget, State
 from mavros_msgs.srv import CommandBool, SetMode, CommandLong
-from geometry_msgs.msg import Quaternion, PoseStamped
-import math
+from geometry_msgs.msg import Quaternion
 import tf_transformations
 
 class TakeoffNode(Node):
     def __init__(self):
         super().__init__('takeoff_node')
-        
+
         # Publishers
         self.attitude_pub = self.create_publisher(AttitudeTarget, '/mavros/setpoint_raw/attitude', 10)
-        self.position_pub = self.create_publisher(PositionTarget, '/mavros/setpoint_raw/local', 10)
-        
+
         # Subscribers
         self.odom_sub = self.create_subscription(Odometry, '/rtabmap/odom', self.odom_callback, 10)
         self.state_sub = self.create_subscription(State, '/mavros/state', self.state_callback, 10)
-        self.altitude_sub = self.create_subscription(PoseStamped, '/mavros/local_position/pose', self.altitude_callback, 10)
-        
+        self.altitude_sub = self.create_subscription(Odometry, '/mavros/local_position/pose', self.altitude_callback, 10)
+
         # Services
         self.arming_client = self.create_client(CommandBool, '/mavros/cmd/arming')
         self.mode_client = self.create_client(SetMode, '/mavros/set_mode')
-        self.command_client = self.create_client(CommandLong, '/mavros/cmd/command')  # Use a single client for commands
-        
-        # Target parameters
-        self.target_roll = 0.0
-        self.target_pitch = 0.0  # ~5.7 degrees
-        self.target_yaw = 0.0
-        self.target_altitude = 0.5  # meters
-        self.target_climb_rate = 0.1  # meters per second
-        self.hover_duration = 3.0  # seconds
-        
+        self.command_client = self.create_client(CommandLong, '/mavros/cmd/command')
+
+        # Flight parameters
+        self.default_takeoff_thrust = 0.6  # Initial thrust for takeoff
+        self.smooth_takeoff_thrust = 0.5  # Thrust when nearing target altitude
+        self.hover_thrust = 0.5  # Thrust to maintain hover
+        self.target_altitude = 1.0  # Target altitude in meters
+        self.hover_duration = 3.0  # Hover duration in seconds
+
         # Current state
         self.current_attitude = {'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}
         self.current_altitude = 0.0
-        self.initial_altitude = None
         self.current_state = State()
-        self.takeoff_initiated = False
-        self.takeoff_command_sent = False
-        self.takeoff_time = None
+        self.flight_state = "IDLE"  # States: IDLE, TAKEOFF, HOVER, LAND
         self.hover_start_time = None
-        
-        # Timer for altitude check
-        self.timer = self.create_timer(1.0, self.check_altitude_timeout)
+
+        # Timer for flight control (5 Hz)
+        self.flight_timer = self.create_timer(0.2, self.flight_control_callback)
 
     def state_callback(self, msg):
         self.current_state = msg
         self.get_logger().info(f"State: Connected={msg.connected}, Armed={msg.armed}, Mode={msg.mode}")
-        if not self.takeoff_initiated and self.current_state.connected:
+        if self.flight_state == "IDLE" and self.current_state.connected:
             self.prepare_for_takeoff()
 
     def altitude_callback(self, msg):
-        self.current_altitude = msg.pose.position.z
-        if self.initial_altitude is None and self.current_state.armed:
-            self.initial_altitude = self.current_altitude
+        self.current_altitude = msg.pose.pose.position.z
         self.get_logger().info(f"Altitude: {self.current_altitude:.2f} meters")
 
     def odom_callback(self, msg):
@@ -66,20 +58,6 @@ class TakeoffNode(Node):
         self.current_attitude['roll'] = euler[0]
         self.current_attitude['pitch'] = euler[1]
         self.current_attitude['yaw'] = euler[2]
-
-        self.get_logger().info(f"Current Attitude: Roll={self.current_attitude['roll']:.2f}, "
-                              f"Pitch={self.current_attitude['pitch']:.2f}, "
-                              f"Yaw={self.current_attitude['yaw']:.2f}")
-
-        if (abs(self.current_attitude['pitch'] - self.target_pitch) > 0.02 or
-            abs(self.current_attitude['roll'] - self.target_roll) > 0.02):
-            self.publish_attitude_target()
-        elif self.current_state.mode == "GUIDED" and self.current_state.armed:
-            if not self.takeoff_command_sent:
-                self.get_logger().info("Attitude aligned, initiating takeoff")
-                self.send_takeoff_command()
-            else:
-                self.manage_flight_state()
 
     def prepare_for_takeoff(self):
         if not self.mode_client.wait_for_service(timeout_sec=5.0):
@@ -90,7 +68,7 @@ class TakeoffNode(Node):
             return
 
         mode_req = SetMode.Request()
-        mode_req.custom_mode = "GUIDED"
+        mode_req.custom_mode = "GUIDED_NOGPS"
         mode_future = self.mode_client.call_async(mode_req)
         mode_future.add_done_callback(self.mode_response)
 
@@ -98,13 +76,13 @@ class TakeoffNode(Node):
         try:
             response = future.result()
             if response.mode_sent:
-                self.get_logger().info("GUIDED mode set successfully")
+                self.get_logger().info("GUIDED_NOGPS mode set successfully")
                 arm_req = CommandBool.Request()
                 arm_req.value = True
                 arm_future = self.arming_client.call_async(arm_req)
                 arm_future.add_done_callback(self.arm_response)
             else:
-                self.get_logger().error("Failed to set GUIDED mode")
+                self.get_logger().error("Failed to set GUIDED_NOGPS mode")
         except Exception as e:
             self.get_logger().error(f"Mode service call failed: {e}")
 
@@ -113,96 +91,60 @@ class TakeoffNode(Node):
             response = future.result()
             if response.success:
                 self.get_logger().info("Vehicle armed successfully")
-                self.takeoff_initiated = True
+                self.flight_state = "TAKEOFF"
             else:
                 self.get_logger().error("Failed to arm vehicle")
         except Exception as e:
             self.get_logger().error(f"Arming service call failed: {e}")
 
-    def publish_attitude_target(self):
+    def flight_control_callback(self):
+        if self.flight_state == "TAKEOFF":
+            self.perform_takeoff()
+        elif self.flight_state == "HOVER":
+            self.perform_hover()
+        elif self.flight_state == "LAND":
+            pass  # Landing handled by land command
+
+    def perform_takeoff(self):
+        if self.current_altitude >= self.target_altitude * 0.95:
+            self.get_logger().info("Reached target altitude, starting hover")
+            self.flight_state = "HOVER"
+            self.hover_start_time = self.get_clock().now()
+            self.set_attitude(thrust=self.hover_thrust)
+        else:
+            if self.current_altitude >= self.target_altitude * 0.6:
+                thrust = self.smooth_takeoff_thrust
+            else:
+                thrust = self.default_takeoff_thrust
+            self.set_attitude(thrust=thrust)
+
+    def perform_hover(self):
+        hover_elapsed = (self.get_clock().now() - self.hover_start_time).nanoseconds / 1e9
+        if hover_elapsed >= self.hover_duration:
+            self.get_logger().info("Hover time complete, initiating landing")
+            self.flight_state = "LAND"
+            self.send_land_command()
+        else:
+            self.set_attitude(thrust=self.hover_thrust)
+
+    def set_attitude(self, thrust=0.5):
         msg = AttitudeTarget()
         msg.header.stamp = self.get_clock().now().to_msg()
-        msg.type_mask = 7  # Ignore rates, use attitude
-        q = tf_transformations.quaternion_from_euler(self.target_roll, self.target_pitch, self.target_yaw)
+        msg.type_mask = 0b00000111  # Ignore rates, use attitude and thrust
+        q = tf_transformations.quaternion_from_euler(0.0, 0.0, self.current_attitude['yaw'])
         msg.orientation = Quaternion(x=q[0], y=q[1], z=q[2], w=q[3])
-        msg.thrust = 0.7
+        msg.thrust = thrust
         self.attitude_pub.publish(msg)
-        self.get_logger().info(f"Sent attitude target: Pitch={self.target_pitch:.2f}, Thrust={msg.thrust}")
-
-    def send_takeoff_command(self):
-        if not self.command_client.wait_for_service(timeout_sec=5.0):  # Updated to command_client
-            self.get_logger().error("Command service not available")
-            return
-
-        takeoff_req = CommandLong.Request()
-        takeoff_req.command = 22  # MAV_CMD_NAV_TAKEOFF
-        takeoff_req.param5 = self.target_climb_rate  # Climb rate in m/s
-        takeoff_req.param7 = self.target_altitude    # Target altitude in meters
-        takeoff_future = self.command_client.call_async(takeoff_req)  # Updated to command_client
-        takeoff_future.add_done_callback(self.takeoff_response)
-        self.takeoff_time = self.get_clock().now()
-
-    def takeoff_response(self, future):
-        try:
-            response = future.result()
-            if response.success:
-                self.get_logger().info("Takeoff command successful")
-                self.takeoff_command_sent = True
-            else:
-                self.get_logger().error(f"Takeoff command failed: {response.result}")
-        except Exception as e:
-            self.get_logger().error(f"Takeoff service call failed: {e}")
-
-    def manage_flight_state(self):
-        altitude_diff = self.current_altitude - (self.initial_altitude or 0.0)
-        if altitude_diff < self.target_altitude - 0.02:
-            # Ascending
-            self.maintain_velocity()
-        elif self.hover_start_time is None:
-            # Reached target altitude, start hovering
-            self.hover_start_time = self.get_clock().now()
-            self.hover()
-        else:
-            # Hovering or landing
-            hover_elapsed = (self.get_clock().now() - self.hover_start_time).nanoseconds / 1e9
-            if hover_elapsed < self.hover_duration:
-                self.hover()
-            else:
-                self.get_logger().info("Hover time complete, initiating landing")
-                self.send_land_command()
-
-    def maintain_velocity(self):
-        msg = PositionTarget()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.coordinate_frame = PositionTarget.FRAME_LOCAL_NED
-        msg.type_mask = (PositionTarget.IGNORE_PX | PositionTarget.IGNORE_PY | 
-                         PositionTarget.IGNORE_AFX | PositionTarget.IGNORE_AFY | 
-                         PositionTarget.IGNORE_AFZ | PositionTarget.IGNORE_YAW | 
-                         PositionTarget.IGNORE_YAW_RATE)
-        msg.velocity.z = self.target_climb_rate
-        self.position_pub.publish(msg)
-        self.get_logger().info(f"Maintaining velocity: {self.target_climb_rate} m/s")
-
-    def hover(self):
-        msg = PositionTarget()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.coordinate_frame = PositionTarget.FRAME_LOCAL_NED
-        msg.type_mask = (PositionTarget.IGNORE_VX | PositionTarget.IGNORE_VY | 
-                         PositionTarget.IGNORE_VZ | PositionTarget.IGNORE_AFX | 
-                         PositionTarget.IGNORE_AFY | PositionTarget.IGNORE_AFZ | 
-                         PositionTarget.IGNORE_YAW_RATE)
-        msg.position.z = self.target_altitude + (self.initial_altitude or 0.0)
-        self.position_pub.publish(msg)
-        self.get_logger().info("Hovering at target altitude")
+        self.get_logger().info(f"Set attitude: Thrust={thrust:.2f}")
 
     def send_land_command(self):
-        if not self.command_client.wait_for_service(timeout_sec=5.0):  # Updated to command_client
+        if not self.command_client.wait_for_service(timeout_sec=5.0):
             self.get_logger().error("Command service not available")
             return
 
         land_req = CommandLong.Request()
         land_req.command = 21  # MAV_CMD_NAV_LAND
-        land_future = self.command_client.call_async(land_req)  # Updated to command_client
+        land_future = self.command_client.call_async(land_req)
         land_future.add_done_callback(self.land_response)
 
     def land_response(self, future):
@@ -214,40 +156,6 @@ class TakeoffNode(Node):
                 self.get_logger().error(f"Land command failed: {response.result}")
         except Exception as e:
             self.get_logger().error(f"Land service call failed: {e}")
-
-    def check_altitude_timeout(self):
-        if self.takeoff_command_sent and self.takeoff_time is not None and self.hover_start_time is None:
-            elapsed_time = (self.get_clock().now() - self.takeoff_time).nanoseconds / 1e9
-            altitude_increase = self.current_altitude - (self.initial_altitude or 0.0)
-            self.get_logger().info(f"Elapsed time: {elapsed_time:.1f}s, Altitude increase: {altitude_increase:.2f}m")
-            
-            if elapsed_time > 30.0 and altitude_increase < 0.05:
-                self.get_logger().warn("Altitude not increasing after 30s, disarming")
-                self.disarm_vehicle()
-
-    def disarm_vehicle(self):
-        if not self.arming_client.wait_for_service(timeout_sec=5.0):
-            self.get_logger().error("Arming service not available for disarming")
-            return
-
-        disarm_req = CommandBool.Request()
-        disarm_req.value = False
-        disarm_future = self.arming_client.call_async(disarm_req)
-        disarm_future.add_done_callback(self.disarm_response)
-
-    def disarm_response(self, future):
-        try:
-            response = future.result()
-            if response.success:
-                self.get_logger().info("Vehicle disarmed successfully")
-                self.takeoff_initiated = False
-                self.takeoff_command_sent = False
-                self.takeoff_time = None
-                self.hover_start_time = None
-            else:
-                self.get_logger().error("Failed to disarm vehicle")
-        except Exception as e:
-            self.get_logger().error(f"Disarm service call failed: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
