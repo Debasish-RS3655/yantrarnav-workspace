@@ -1,0 +1,33 @@
+[2.017s] Invoking command in '/home/nits/ros2_ws/src/pose_relay': PYTHONPATH=/home/nits/ros2_ws/build/pose_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_relay build --build-base /home/nits/ros2_ws/build/pose_relay/build install --record /home/nits/ros2_ws/build/pose_relay/install.log --single-version-externally-managed install_data
+[2.645s] running egg_info
+[2.685s] creating ../../build/pose_relay/pose_relay.egg-info
+[2.685s] writing ../../build/pose_relay/pose_relay.egg-info/PKG-INFO
+[2.686s] writing dependency_links to ../../build/pose_relay/pose_relay.egg-info/dependency_links.txt
+[2.687s] writing entry points to ../../build/pose_relay/pose_relay.egg-info/entry_points.txt
+[2.687s] writing requirements to ../../build/pose_relay/pose_relay.egg-info/requires.txt
+[2.687s] writing top-level names to ../../build/pose_relay/pose_relay.egg-info/top_level.txt
+[2.688s] writing manifest file '../../build/pose_relay/pose_relay.egg-info/SOURCES.txt'
+[2.770s] reading manifest file '../../build/pose_relay/pose_relay.egg-info/SOURCES.txt'
+[2.772s] writing manifest file '../../build/pose_relay/pose_relay.egg-info/SOURCES.txt'
+[2.773s] running build
+[2.773s] running build_py
+[2.773s] creating /home/nits/ros2_ws/build/pose_relay/build/lib/pose_relay
+[2.774s] copying pose_relay/pose_relay_node.py -> /home/nits/ros2_ws/build/pose_relay/build/lib/pose_relay
+[2.774s] copying pose_relay/__init__.py -> /home/nits/ros2_ws/build/pose_relay/build/lib/pose_relay
+[2.775s] running install
+[2.786s] running install_lib
+[2.829s] creating /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay
+[2.829s] copying /home/nits/ros2_ws/build/pose_relay/build/lib/pose_relay/pose_relay_node.py -> /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay
+[2.829s] copying /home/nits/ros2_ws/build/pose_relay/build/lib/pose_relay/__init__.py -> /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay
+[2.830s] byte-compiling /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay/pose_relay_node.py to pose_relay_node.cpython-310.pyc
+[2.832s] byte-compiling /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay/__init__.py to __init__.cpython-310.pyc
+[2.832s] running install_data
+[2.833s] creating /home/nits/ros2_ws/install/pose_relay/share/ament_index/resource_index/packages
+[2.833s] copying resource/pose_relay -> /home/nits/ros2_ws/install/pose_relay/share/ament_index/resource_index/packages
+[2.834s] copying package.xml -> /home/nits/ros2_ws/install/pose_relay/share/pose_relay
+[2.834s] running install_egg_info
+[2.880s] Copying ../../build/pose_relay/pose_relay.egg-info to /home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages/pose_relay-0.0.0-py3.10.egg-info
+[2.882s] running install_scripts
+[3.219s] Installing pose_relay_node script to /home/nits/ros2_ws/install/pose_relay/lib/pose_relay
+[3.220s] writing list of installed files to '/home/nits/ros2_ws/build/pose_relay/install.log'
+[3.300s] Invoked command in '/home/nits/ros2_ws/src/pose_relay' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/pose_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pose_relay build --build-base /home/nits/ros2_ws/build/pose_relay/build install --record /home/nits/ros2_ws/build/pose_relay/install.log --single-version-externally-managed install_data

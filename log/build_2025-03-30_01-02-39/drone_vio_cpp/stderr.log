@@ -1,0 +1,8 @@
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:[m[K In constructor ‘[01m[KOdomToVisionPose::OdomToVisionPose()[m[K’:
+[01m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp:23:36:[m[K [01;31m[Kerror: [m[K‘[01m[KM_pi[m[K’ was not declared in this scope; did you mean ‘[01m[KM_PI[m[K’?
+   23 |         rotation.setRPY(0.5965-(45*[01;31m[KM_pi[m[K/180), 0.5965, 0.3802);
+      |                                    [01;31m[K^~~~[m[K
+      |                                    [32m[KM_PI[m[K
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,29 @@
+/home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+creating ../../build/altitude_package/altitude_package.egg-info
+writing ../../build/altitude_package/altitude_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/altitude_package/altitude_package.egg-info/dependency_links.txt
+writing entry points to ../../build/altitude_package/altitude_package.egg-info/entry_points.txt
+writing requirements to ../../build/altitude_package/altitude_package.egg-info/requires.txt
+writing top-level names to ../../build/altitude_package/altitude_package.egg-info/top_level.txt
+writing manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package
+copying altitude_package/altitude_node.py -> /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package
+copying altitude_package/__init__.py -> /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package
+running install
+running install_lib
+creating /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package
+copying /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package/altitude_node.py -> /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package
+copying /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package/__init__.py -> /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package
+byte-compiling /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package/altitude_node.py to altitude_node.cpython-310.pyc
+byte-compiling /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package/__init__.py to __init__.cpython-310.pyc
+running install_egg_info
+Copying ../../build/altitude_package/altitude_package.egg-info to /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package-0.0.1-py3.10.egg-info
+running install_scripts
+Installing altitude_node script to /home/nits/ros2_ws/install/altitude_package/lib/altitude_package
+writing list of installed files to '/home/nits/ros2_ws/build/altitude_package/install.log'

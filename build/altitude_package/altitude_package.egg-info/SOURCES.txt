@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+../../build/altitude_package/altitude_package.egg-info/PKG-INFO
+../../build/altitude_package/altitude_package.egg-info/SOURCES.txt
+../../build/altitude_package/altitude_package.egg-info/dependency_links.txt
+../../build/altitude_package/altitude_package.egg-info/entry_points.txt
+../../build/altitude_package/altitude_package.egg-info/requires.txt
+../../build/altitude_package/altitude_package.egg-info/top_level.txt
+../../build/altitude_package/altitude_package.egg-info/zip-safe
+altitude_package/__init__.py
+altitude_package/altitude_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

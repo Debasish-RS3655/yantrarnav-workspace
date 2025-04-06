@@ -1,0 +1,2 @@
+[console_scripts]
+pose_relay_node = pose_relay.pose_relay_node:main

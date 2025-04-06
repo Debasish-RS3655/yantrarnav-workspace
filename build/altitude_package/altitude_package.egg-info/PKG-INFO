@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: altitude_package
+Version: 0.0.1
+Summary: ROS 2 node for altitude estimation using static pressure
+Maintainer: nits
+Maintainer-email: duttaamandip1194@gmail.com
+License: Apache License 2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

@@ -20,7 +20,7 @@ public:
 
         // Define the transform from camera_link to base_link
         tf2::Quaternion rotation;
-        rotation.setRPY(0.5965, 0.5965, 0.3802);
+        rotation.setRPY(0.5965-(34.2*M_PI/180), 0.5965, 0.3802);
         camera_to_base_transform_.setRotation(rotation);
         camera_to_base_transform_.setOrigin(tf2::Vector3(0.0, 0.0, 0.0));
 

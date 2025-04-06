@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.000737] (-) JobUnselected: {'identifier': 'boundary_mapper'}
+[0.001328] (-) JobUnselected: {'identifier': 'drone_takeoff'}
+[0.001744] (-) JobUnselected: {'identifier': 'drone_vio_cpp'}
+[0.002094] (-) JobUnselected: {'identifier': 'drone_vio_py'}
+[0.002211] (-) JobUnselected: {'identifier': 'landing_area_detector'}
+[0.002297] (-) JobUnselected: {'identifier': 'local_zeroing_pkg'}
+[0.002376] (-) JobUnselected: {'identifier': 'mavros_takeoff'}
+[0.002450] (-) JobUnselected: {'identifier': 'my_mavros_subscriber'}
+[0.002526] (-) JobUnselected: {'identifier': 'my_package'}
+[0.002600] (-) JobUnselected: {'identifier': 'new_takeoff_node'}
+[0.002673] (-) JobUnselected: {'identifier': 'pose_relay'}
+[0.002747] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.002822] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.002901] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.002978] (-) JobUnselected: {'identifier': 'vision_to_local_pose'}
+[0.003102] (altitude_package) JobQueued: {'identifier': 'altitude_package', 'dependencies': OrderedDict()}
+[0.003537] (altitude_package) JobStarted: {'identifier': 'altitude_package'}
+[0.099225] (-) TimerEvent: {}
+[0.199902] (-) TimerEvent: {}
+[0.300526] (-) TimerEvent: {}
+[0.401179] (-) TimerEvent: {}
+[0.501874] (-) TimerEvent: {}
+[0.602485] (-) TimerEvent: {}
+[0.703186] (-) TimerEvent: {}
+[0.803969] (-) TimerEvent: {}
+[0.904591] (-) TimerEvent: {}
+[1.005436] (-) TimerEvent: {}
+[1.106062] (-) TimerEvent: {}
+[1.206692] (-) TimerEvent: {}
+[1.307620] (-) TimerEvent: {}
+[1.408667] (-) TimerEvent: {}
+[1.509514] (-) TimerEvent: {}
+[1.610134] (-) TimerEvent: {}
+[1.710744] (-) TimerEvent: {}
+[1.811405] (-) TimerEvent: {}
+[1.912081] (-) TimerEvent: {}
+[2.012734] (-) TimerEvent: {}
+[2.114713] (-) TimerEvent: {}
+[2.217739] (-) TimerEvent: {}
+[2.318503] (-) TimerEvent: {}
+[2.419167] (-) TimerEvent: {}
+[2.519831] (-) TimerEvent: {}
+[2.621141] (-) TimerEvent: {}
+[2.658428] (altitude_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/altitude_package', 'build', '--build-base', '/home/nits/ros2_ws/build/altitude_package/build', 'install', '--record', '/home/nits/ros2_ws/build/altitude_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/nits/ros2_ws/src/altitude_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nits', 'ROS_PACKAGE_PATH': '/home/nits/ros2_ws/install/flat_area_detector/share', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib:/home/nits/ros2_ws/install/realsense2_camera/lib:/home/nits/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/nits', 'OLDPWD': '/home/nits/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '44529', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nits/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'nits', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nits/vcpkg/installed/arm64-linux/lib/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/aarch64-linux-gnu/pkgconfig:/home/nits/ros2_ws/install/flat_area_detector/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nits', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/nits/vcpkg/installed/arm64-linux/bin:/usr/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/lib/ccache:/home/nits/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/nits/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nits/.local/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1996,unix/ubuntu:/tmp/.ICE-unix/1996', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2a09964b_dc63_45cb_93c4_6b751a9f0d8b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.122', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nits/ros2_ws/install/vision_to_local_pose:/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/pose_relay:/home/nits/ros2_ws/install/new_takeoff_node:/home/nits/ros2_ws/install/my_package:/home/nits/ros2_ws/install/mavros_takeoff:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/drone_vio_py:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/drone_takeoff:/home/nits/ros2_ws/install/boundary_mapper:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nits/ros2_ws/build/altitude_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nits/ros2_ws/build/altitude_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages:/home/nits/ros2_ws/install/vision_to_local_pose/lib/python3.10/site-packages:/home/nits/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/nits/ros2_ws/install/pose_relay/lib/python3.10/site-packages:/home/nits/ros2_ws/install/new_takeoff_node/lib/python3.10/site-packages:/home/nits/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/nits/ros2_ws/install/mavros_takeoff/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_vio_py/lib/python3.10/site-packages:/home/nits/ros2_ws/install/drone_takeoff/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/nits/ros2_ws/install/realsense2_description:/home/nits/ros2_ws/install/realsense2_camera:/home/nits/ros2_ws/install/realsense2_camera_msgs:/home/nits/ros2_ws/install/local_zeroing_pkg:/home/nits/ros2_ws/install/landing_area_detector:/home/nits/ros2_ws/install/flat_area_detector:/home/nits/ros2_ws/install/drone_vio_cpp:/home/nits/ros2_ws/install/boundary_mapper'}, 'shell': False}
+[2.721515] (-) TimerEvent: {}
+[2.822879] (-) TimerEvent: {}
+[2.923830] (-) TimerEvent: {}
+[3.024508] (-) TimerEvent: {}
+[3.125442] (-) TimerEvent: {}
+[3.205540] (altitude_package) StderrLine: {'line': b"/home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[3.206157] (altitude_package) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[3.225634] (-) TimerEvent: {}
+[3.326436] (-) TimerEvent: {}
+[3.427046] (-) TimerEvent: {}
+[3.429189] (altitude_package) StdoutLine: {'line': b'running egg_info\n'}
+[3.469773] (altitude_package) StdoutLine: {'line': b'creating ../../build/altitude_package/altitude_package.egg-info\n'}
+[3.470271] (altitude_package) StdoutLine: {'line': b'writing ../../build/altitude_package/altitude_package.egg-info/PKG-INFO\n'}
+[3.471480] (altitude_package) StdoutLine: {'line': b'writing dependency_links to ../../build/altitude_package/altitude_package.egg-info/dependency_links.txt\n'}
+[3.471917] (altitude_package) StdoutLine: {'line': b'writing entry points to ../../build/altitude_package/altitude_package.egg-info/entry_points.txt\n'}
+[3.472282] (altitude_package) StdoutLine: {'line': b'writing requirements to ../../build/altitude_package/altitude_package.egg-info/requires.txt\n'}
+[3.472524] (altitude_package) StdoutLine: {'line': b'writing top-level names to ../../build/altitude_package/altitude_package.egg-info/top_level.txt\n'}
+[3.472804] (altitude_package) StdoutLine: {'line': b"writing manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'\n"}
+[3.527213] (-) TimerEvent: {}
+[3.565528] (altitude_package) StdoutLine: {'line': b"reading manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'\n"}
+[3.568159] (altitude_package) StdoutLine: {'line': b"writing manifest file '../../build/altitude_package/altitude_package.egg-info/SOURCES.txt'\n"}
+[3.568686] (altitude_package) StdoutLine: {'line': b'running build\n'}
+[3.568875] (altitude_package) StdoutLine: {'line': b'running build_py\n'}
+[3.569128] (altitude_package) StdoutLine: {'line': b'creating /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package\n'}
+[3.571265] (altitude_package) StdoutLine: {'line': b'copying altitude_package/altitude_node.py -> /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package\n'}
+[3.571697] (altitude_package) StdoutLine: {'line': b'copying altitude_package/__init__.py -> /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package\n'}
+[3.572491] (altitude_package) StdoutLine: {'line': b'running install\n'}
+[3.583516] (altitude_package) StdoutLine: {'line': b'running install_lib\n'}
+[3.627379] (-) TimerEvent: {}
+[3.628006] (altitude_package) StdoutLine: {'line': b'creating /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package\n'}
+[3.628587] (altitude_package) StdoutLine: {'line': b'copying /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package/altitude_node.py -> /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package\n'}
+[3.629139] (altitude_package) StdoutLine: {'line': b'copying /home/nits/ros2_ws/build/altitude_package/build/lib/altitude_package/__init__.py -> /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package\n'}
+[3.632539] (altitude_package) StdoutLine: {'line': b'byte-compiling /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package/altitude_node.py to altitude_node.cpython-310.pyc\n'}
+[3.637564] (altitude_package) StdoutLine: {'line': b'byte-compiling /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package/__init__.py to __init__.cpython-310.pyc\n'}
+[3.638123] (altitude_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.685902] (altitude_package) StdoutLine: {'line': b'Copying ../../build/altitude_package/altitude_package.egg-info to /home/nits/ros2_ws/install/altitude_package/lib/python3.10/site-packages/altitude_package-0.0.1-py3.10.egg-info\n'}
+[3.689063] (altitude_package) StdoutLine: {'line': b'running install_scripts\n'}
+[3.727798] (-) TimerEvent: {}
+[3.828435] (-) TimerEvent: {}
+[3.929071] (-) TimerEvent: {}
+[4.029990] (-) TimerEvent: {}
+[4.049848] (altitude_package) StdoutLine: {'line': b'Installing altitude_node script to /home/nits/ros2_ws/install/altitude_package/lib/altitude_package\n'}
+[4.051996] (altitude_package) StdoutLine: {'line': b"writing list of installed files to '/home/nits/ros2_ws/build/altitude_package/install.log'\n"}
+[4.130185] (-) TimerEvent: {}
+[4.167402] (altitude_package) CommandEnded: {'returncode': 0}
+[4.197294] (altitude_package) JobEnded: {'identifier': 'altitude_package', 'rc': 0}
+[4.199808] (-) EventReactorShutdown: {}

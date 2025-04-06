@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: pose_filter
+Version: 0.0.0
+Summary: A package to filter /mavros/vision_pose/pose data using an EKF
+Maintainer: NITS
+Maintainer-email: duttaamandip1194@gmail.com
+License: Apache License 2.0
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

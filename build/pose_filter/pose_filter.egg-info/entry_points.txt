@@ -1,0 +1,2 @@
+[console_scripts]
+pose_filter_node = pose_filter.pose_filter_node:main

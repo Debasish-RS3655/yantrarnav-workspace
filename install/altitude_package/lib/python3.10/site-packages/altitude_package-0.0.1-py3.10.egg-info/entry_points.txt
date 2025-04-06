@@ -1,0 +1,2 @@
+[console_scripts]
+altitude_node = altitude_package.altitude_node:main

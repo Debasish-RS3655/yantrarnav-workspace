@@ -1,0 +1,5 @@
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/nits/ros2_ws/src/drone_vio_cpp/src/odom_to_vision_pose.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/odom_to_vision_pose.dir/build.make:76: CMakeFiles/odom_to_vision_pose.dir/src/odom_to_vision_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_to_vision_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
