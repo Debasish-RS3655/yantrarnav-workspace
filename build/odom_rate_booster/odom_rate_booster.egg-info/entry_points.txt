@@ -1,0 +1,2 @@
+[console_scripts]
+odom_rate_booster = odom_rate_booster.odom_rate_booster:main

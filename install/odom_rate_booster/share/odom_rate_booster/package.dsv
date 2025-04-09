@@ -1,0 +1,6 @@
+source;share/odom_rate_booster/hook/pythonpath.ps1
+source;share/odom_rate_booster/hook/pythonpath.dsv
+source;share/odom_rate_booster/hook/pythonpath.sh
+source;share/odom_rate_booster/hook/ament_prefix_path.ps1
+source;share/odom_rate_booster/hook/ament_prefix_path.dsv
+source;share/odom_rate_booster/hook/ament_prefix_path.sh

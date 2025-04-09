@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: odom_rate_booster
+Version: 0.0.1
+Summary: Odometry rate booster for ROS 2 with MAVROS integration
+Maintainer: nits
+Maintainer-email: nits@example.com
+License: Apache License 2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

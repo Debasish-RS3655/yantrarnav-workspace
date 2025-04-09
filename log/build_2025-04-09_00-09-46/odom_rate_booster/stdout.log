@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/odom_rate_booster/odom_rate_booster.egg-info
+writing ../../build/odom_rate_booster/odom_rate_booster.egg-info/PKG-INFO
+writing dependency_links to ../../build/odom_rate_booster/odom_rate_booster.egg-info/dependency_links.txt
+writing entry points to ../../build/odom_rate_booster/odom_rate_booster.egg-info/entry_points.txt
+writing requirements to ../../build/odom_rate_booster/odom_rate_booster.egg-info/requires.txt
+writing top-level names to ../../build/odom_rate_booster/odom_rate_booster.egg-info/top_level.txt
+writing manifest file '../../build/odom_rate_booster/odom_rate_booster.egg-info/SOURCES.txt'
+reading manifest file '../../build/odom_rate_booster/odom_rate_booster.egg-info/SOURCES.txt'
+writing manifest file '../../build/odom_rate_booster/odom_rate_booster.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster
+copying odom_rate_booster/__init__.py -> /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster
+copying odom_rate_booster/odom_rate_booster.py -> /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster
+running install
+running install_lib
+creating /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster
+copying /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster/__init__.py -> /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster
+copying /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster/odom_rate_booster.py -> /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster
+byte-compiling /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster/odom_rate_booster.py to odom_rate_booster.cpython-310.pyc
+running install_data
+creating /home/nits/ros2_ws/install/odom_rate_booster/share/ament_index/resource_index/packages
+copying resource/odom_rate_booster -> /home/nits/ros2_ws/install/odom_rate_booster/share/ament_index/resource_index/packages
+copying package.xml -> /home/nits/ros2_ws/install/odom_rate_booster/share/odom_rate_booster
+creating /home/nits/ros2_ws/install/odom_rate_booster/share/odom_rate_booster/launch
+running install_egg_info
+Copying ../../build/odom_rate_booster/odom_rate_booster.egg-info to /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster-0.0.1-py3.10.egg-info
+running install_scripts
+Installing odom_rate_booster script to /home/nits/ros2_ws/install/odom_rate_booster/lib/odom_rate_booster
+writing list of installed files to '/home/nits/ros2_ws/build/odom_rate_booster/install.log'

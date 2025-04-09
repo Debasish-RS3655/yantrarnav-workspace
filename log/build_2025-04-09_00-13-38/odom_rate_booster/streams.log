@@ -1,0 +1,27 @@
+[2.027s] Invoking command in '/home/nits/ros2_ws/src/odom_rate_booster': PYTHONPATH=/home/nits/ros2_ws/build/odom_rate_booster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom_rate_booster build --build-base /home/nits/ros2_ws/build/odom_rate_booster/build install --record /home/nits/ros2_ws/build/odom_rate_booster/install.log --single-version-externally-managed install_data
+[2.417s] /home/nits/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.418s]   warnings.warn(msg)
+[2.686s] running egg_info
+[2.727s] writing ../../build/odom_rate_booster/odom_rate_booster.egg-info/PKG-INFO
+[2.728s] writing dependency_links to ../../build/odom_rate_booster/odom_rate_booster.egg-info/dependency_links.txt
+[2.729s] writing entry points to ../../build/odom_rate_booster/odom_rate_booster.egg-info/entry_points.txt
+[2.730s] writing requirements to ../../build/odom_rate_booster/odom_rate_booster.egg-info/requires.txt
+[2.730s] writing top-level names to ../../build/odom_rate_booster/odom_rate_booster.egg-info/top_level.txt
+[2.818s] reading manifest file '../../build/odom_rate_booster/odom_rate_booster.egg-info/SOURCES.txt'
+[2.821s] writing manifest file '../../build/odom_rate_booster/odom_rate_booster.egg-info/SOURCES.txt'
+[2.822s] running build
+[2.822s] running build_py
+[2.823s] copying odom_rate_booster/__init__.py -> /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster
+[2.823s] copying odom_rate_booster/odom_rate_booster.py -> /home/nits/ros2_ws/build/odom_rate_booster/build/lib/odom_rate_booster
+[2.824s] running install
+[2.835s] running install_lib
+[2.879s] running install_data
+[2.879s] copying resource/odom_rate_booster -> /home/nits/ros2_ws/install/odom_rate_booster/share/ament_index/resource_index/packages
+[2.880s] copying package.xml -> /home/nits/ros2_ws/install/odom_rate_booster/share/odom_rate_booster
+[2.880s] running install_egg_info
+[2.924s] removing '/home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster-0.0.1-py3.10.egg-info' (and everything under it)
+[2.925s] Copying ../../build/odom_rate_booster/odom_rate_booster.egg-info to /home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages/odom_rate_booster-0.0.1-py3.10.egg-info
+[2.927s] running install_scripts
+[3.280s] Installing odom_rate_booster script to /home/nits/ros2_ws/install/odom_rate_booster/lib/odom_rate_booster
+[3.281s] writing list of installed files to '/home/nits/ros2_ws/build/odom_rate_booster/install.log'
+[3.376s] Invoked command in '/home/nits/ros2_ws/src/odom_rate_booster' returned '0': PYTHONPATH=/home/nits/ros2_ws/build/odom_rate_booster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nits/ros2_ws/install/odom_rate_booster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odom_rate_booster build --build-base /home/nits/ros2_ws/build/odom_rate_booster/build install --record /home/nits/ros2_ws/build/odom_rate_booster/install.log --single-version-externally-managed install_data
